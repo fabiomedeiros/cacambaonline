@@ -1,0 +1,37 @@
+﻿
+@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
+@{
+    ViewData["Title"] = "Lista de Perfis de Autorização";
+}
+
+<h2>@ViewData["Title"]</h2>
+<p>&nbsp</p>
+<a asp-action="Criar" disabled class="btn btn-primary">Novo Perfil</a>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Nome</td>
+            <td>Ação</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model)
+        {
+            <tr>
+                <td>@role.Id</td>
+                <td>@role.Name</td>
+                <td>
+
+                    <a asp-action="Editar" asp-route-id="@role.Id"><spam class="fa fa-pencil-alt"></spam></a>
+                    <a asp-action="Excluir" asp-route-id="@role.Id"><spam class="fa fa-trash"></spam></a>
+                    
+                </td>
+            </tr>
+
+        }
+    </tbody>
+   
+</table>

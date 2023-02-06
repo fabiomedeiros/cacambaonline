@@ -1,0 +1,105 @@
+﻿@model cacambaonline.Models.Destinatarios
+
+@{
+    ViewData["Title"] = "Novo Destinatário";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           @* <div class="form-group">
+                <label asp-for="UsuarioId" class="control-label" style="color:red">Associar usuário ao destinatário.(obrigatório)</label>
+                <select asp-for="UsuarioId" class="form-control" asp-items="ViewBag.UsuarioId"></select>
+            </div>*@
+            <p></p>
+            <div class="form-group">
+                <label asp-for="Cnpj" class="control-label"></label>
+                <input asp-for="Cnpj" class="form-control" />
+                <span asp-validation-for="Cnpj" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomeEmpresarial" class="control-label"></label>
+                <input asp-for="NomeEmpresarial" class="form-control" />
+                <span asp-validation-for="NomeEmpresarial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomeFantasia" class="control-label"></label>
+                <input asp-for="NomeFantasia" class="form-control" />
+                <span asp-validation-for="NomeFantasia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefone" class="control-label"></label>
+                <input asp-for="Telefone" class="form-control" />
+                <span asp-validation-for="Telefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnderecoEletronico" class="control-label"></label>
+                <input asp-for="EnderecoEletronico" class="form-control" />
+                <span asp-validation-for="EnderecoEletronico" class="text-danger"></span>
+            </div>
+
+            <p>&nbsp;</p>
+            <h4>Endereço</h4>
+            <hr />
+            <div class="row">
+                <div class="col-md-12">
+                    <partial name="_EnderecosDestinatario" />
+                </div>
+            </div>
+            <p>&nbsp;</p>
+
+           <div class="form-group">
+        <input type="submit" value="Cadastrar" class="btn btn-primary"  /> | <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+    </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+
+<script>
+    $(document).ready(function () {
+        //Mascara
+        $("#Data_Nascimento").inputmask('99/99/9999');
+        $("#cpf").inputmask('999.999.999-99');
+        $("#cnpj").inputmask('99.999.999/9999-99');
+
+        //Dropdown dinâmico.
+        $("#EstadoId").change(function () {
+            var id = $(this).val();
+            $.ajax({
+                url: '/habitavv/Pessoas/GetCidade',
+                type: 'POST',
+                dataType: 'json',
+                data: { id: id },
+                success: function (data) {
+                    var options = '';
+                    $.each(data, function () {
+                        options += '<option value="' + this.value + '">' +
+                            this.text + '</option>';
+                    });
+                    $("#CidadeId").prop('disabled', false).html(options);
+                }
+            });
+        });
+
+    });
+
+    BuscaCepDestinatario();
+    </script>
+
+}

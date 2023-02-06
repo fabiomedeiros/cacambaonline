@@ -1,0 +1,57 @@
+﻿@model cacambaonline.Models.Destinatarios
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="form-group">
+            <label asp-for="EnderecosDestinatario.CEP" class="control-label"></label>
+            <input asp-for="EnderecosDestinatario.CEP" class="form-control" />
+            <span asp-validation-for="EnderecosDestinatario.CEP" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EnderecosDestinatario.Cidade" class="control-label"></label>
+            <input asp-for="EnderecosDestinatario.Cidade" class="form-control" />
+            <span asp-validation-for="EnderecosDestinatario.Cidade" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EnderecosDestinatario.Estado" class="control-label"></label>
+            <input asp-for="EnderecosDestinatario.Estado" class="form-control" />
+            <span asp-validation-for="EnderecosDestinatario.Estado" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EnderecosDestinatario.Bairro" class="control-label"></label>
+            <input asp-for="EnderecosDestinatario.Bairro" class="form-control" />
+            <span asp-validation-for="EnderecosDestinatario.Bairro" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EnderecosDestinatario.Logradouro" class="control-label"></label>
+            <input asp-for="EnderecosDestinatario.Logradouro" class="form-control" />
+            <span asp-validation-for="EnderecosDestinatario.Logradouro" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EnderecosDestinatario.Numero" class="control-label"></label>
+            <input asp-for="EnderecosDestinatario.Numero" class="form-control" />
+            <span asp-validation-for="EnderecosDestinatario.Numero" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EnderecosDestinatario.Complemento" class="control-label"></label>
+            <input asp-for="EnderecosDestinatario.Complemento" class="form-control" />
+            <span asp-validation-for="EnderecosDestinatario.Complemento" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EnderecosDestinatario.Latitude" class="control-label"></label>
+            <input asp-for="EnderecosDestinatario.Latitude" class="form-control" />
+            <span asp-validation-for="EnderecosDestinatario.Latitude" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EnderecosDestinatario.Longitude" class="control-label"></label>
+            <input asp-for="EnderecosDestinatario.Longitude" class="form-control" />
+            <span asp-validation-for="EnderecosDestinatario.Longitude" class="text-danger"></span>
+        </div>
+        @*<div class="form-group">
+            <label asp-for="EnderecosDestinatario.DestinatariosId" class="control-label"></label>
+            <select asp-for="EnderecosDestinatario.DestinatariosId" class="form-control" asp-items="ViewBag.DestinatariosId"></select>
+        </div>*@
+
+    </div>
+</div>

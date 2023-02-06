@@ -1,0 +1,36 @@
+﻿
+@model IEnumerable<Tuple<string,IList<string>>>
+@{
+    
+    ViewData["Title"] = "Lista de Usuários";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>E-mail</td>
+            <td>Perfil</td>
+            <td>Ação</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model)
+        {
+            <tr>
+                <td>@usuario.Item1</td>
+                <td>@usuario.Item2.FirstOrDefault()</td>
+                <td>
+                    <form asp-action="GerenciarEditar" method="post">
+                        <input id="email" name="email" value="@usuario.Item1" hidden />
+                        <button type="submit"><spam class="fa fa-pencil-alt"></spam></button><br />
+                    </form>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>

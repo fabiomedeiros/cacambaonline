@@ -1,0 +1,177 @@
+﻿@model cacambaonline.Models.Geradores
+
+@{
+    ViewData["Title"] = "Novo Gerador";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cpf" class="control-label"></label>
+                <input asp-for="Cpf" class="form-control" />
+                <span asp-validation-for="Cpf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefone" class="control-label"></label>
+                <input asp-for="Telefone" class="form-control" />
+                <span asp-validation-for="Telefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+             <p>&nbsp;</p>
+            <h4>Endereço</h4>
+            <hr />
+            <div class="row">
+                <div class="col-md-12">
+                    <partial name="_EnderecoGeradores" />
+                  
+                </div>
+            </div>
+            <p>&nbsp;</p>
+
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" /> | <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+            </div>
+        </form>
+         
+        
+        <button onclick="getLocation()">Capturar minha Latitude e Longitude</button>
+        <script>
+                    function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else { x.innerHTML = "O seu navegador não suporta Geolocalização. É necessário atualizá-lo"; }
+            }
+            function showPosition(position) {
+                //x.innerHTML = "Latitude: " + position.coords.latitude +
+                //    "<br>Longitude: " + position.coords.longitude;
+
+                document.getElementById("EnderecosGerador_Latitude").value = position.coords.latitude;
+                document.getElementById("EnderecosGerador_Longitude").value = position.coords.longitude;
+            }
+        </script>
+
+
+        Read more: http://www.linhadecodigo.com.br/artigo/3653/usando-geolocalizacao-com-html5.aspx#ixzz7mijGbcre
+
+
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+     @*<script>
+         
+        var x = document.getElementById("EnderecosGerador.Latitude");
+        var y = document.getElementById("EnderecosGerador.Longitude");
+                if ('geolocation' in navigator) {
+            navigator.geolocation.getCurrentPosition
+            (
+                function(position)
+                {
+                         x.val = position.coords.latitude
+            y.val = position.coords.longitude;
+
+                    console.log(position)
+                }, function(error)
+                {
+                    console.log(error)
+                }
+            )
+       </script>*@
+            
+
+
+    <script>
+
+       
+
+        //var x = document.getElementById("EnderecosGerador.Latitude");
+        //var y = document.getElementById("EnderecosGerador.Longitude");
+        //function getLocation() {
+        //    if (navigator.geolocation) {
+        //        navigator.geolocation.getCurrentPosition(showPosition);
+        //    }
+        //    else { x.innerHTML = "O seu navegador não suporta Geolocalização."; }
+        //}
+        //function showPosition(position) {
+        //    x.innerHTML = position.coords.latitude
+        //    y.innerHTML = position.coords.longitude;
+        //}
+
+
+
+    $(document).ready(function () {
+        //Mascara
+        //$("#Data_Nascimento").inputmask('99/99/9999');
+        //$("#cpf").inputmask('999.999.999-99');
+        //$("#cnpj").inputmask('99.999.999/9999-99');
+
+        //Obter Latitude e Longitude
+        //$("#EnderecosGerador.Latitude").val("");
+        //$("#EnderecosGerador.Longitude").val("");
+            if ('geolocation' in navigator) {
+                navigator.geolocation.getCurrentPosition
+                    (
+                        function (position) {
+                           $("#EnderecosGerador.Latitude").val(position.coords.latitude);
+                             $("#EnderecosGerador.Longitude").val(position.coords.longitude);
+
+                            console.log(position)
+                        }, function (error) {
+                        console.log(error)
+                    }
+                    )}
+           //Fim obter Latitude e Longitude
+
+
+
+        //Dropdown dinâmico.
+        $("#EstadoId").change(function () {
+            var id = $(this).val();
+            $.ajax({
+                url: '/habitavv/Pessoas/GetCidade',
+                type: 'POST',
+                dataType: 'json',
+                data: { id: id },
+                success: function (data) {
+                    var options = '';
+                    $.each(data, function () {
+                        options += '<option value="' + this.value + '">' +
+                            this.text + '</option>';
+                    });
+                    $("#CidadeId").prop('disabled', false).html(options);
+                }
+            });
+        });
+
+    });
+    BuscaCepGeradores();
+    
+    </script>
+
+
+   
+
+@*Read more: http://www.linhadecodigo.com.br/artigo/3653/usando-geolocalizacao-com-html5.aspx#ixzz7miQpkNOW*@
+
+}

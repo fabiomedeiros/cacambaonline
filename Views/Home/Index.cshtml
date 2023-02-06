@@ -1,0 +1,109 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <p>&nbsp;</p>
+    <h1 class="display-4">Sistema - Gestão de Caçambas</h1>
+    <h5>Ao acessar o sistema, cada usuário terá sua visão do mesmo, de acordo com sua permissão.</h5>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div class="container-fluid" style="text-align:center">
+
+        <div class="row" >
+            <div class="col-md-12">
+              <a href="~/arquivos/Manual do Sistema - Caçamba Online.docx">  <button type="button"  class="btn btn-lg btn-block btn-primary">Baixar - Manual do Sistema</button> </a>
+            </div>
+        </div>
+
+       @* <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-2 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Administrador</h4>
+                    </div>
+                    <div class="card-body">
+                   
+                        <a href="~/Identity/Account/Login">  <button type="button" class="btn btn-lg btn-block btn-primary">Acessar</button> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-2 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Gestor</h4>
+                    </div>
+                    <div class="card-body">
+                        <a href="~/Identity/Account/Login">  <button type="button" class="btn btn-lg btn-block btn-primary">Acessar</button> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-2 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Fiscal</h4>
+                    </div>
+                    <div class="card-body">
+                        <a href="~/Identity/Account/Login">  <button type="button" class="btn btn-lg btn-block btn-primary">Acessar</button> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-2 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Transportador</h4>
+                    </div>
+                    <div class="card-body">
+                        <a href="~/Identity/Account/Login">  <button type="button" class="btn btn-lg btn-block btn-primary">Acessar</button> </a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>*@
+
+    </div>
+
+</div>
+
+
+      @*@if (SignInManager.IsSignedIn(User))
+    {
+        @if (User.IsInRole("Transportador"))
+        {
+            <script>
+                function atualizacoordenada()
+                {
+                    if ('geolocation' in navigator) 
+                    {
+                        const watcher = navigator.geolocation.watchPosition
+                        (
+                            function (position) 
+                            {
+                                window.location.href = '@Url.Action("AtualizarCoordenadas", "CTRs")/?latitude=' + position.coords.latitude + '' + '&longitude=' + position.coords.longitude;
+                            },
+                            function (error) 
+                            {
+                                console.log(error)
+                            },
+                            {
+                                enableHighAccuracy: true, maximumAge: 3000, timeout: 3000
+                            }
+
+                        )
+
+                    }
+                    else 
+                    {
+                        alert('ops, não foi possível pegar alocalização')
+                    }
+                }
+
+            setInterval(atualizacoordenada, 3000);
+            </script>
+        }
+
+    }*@
+

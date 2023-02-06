@@ -1,0 +1,59 @@
+﻿@model cacambaonline.Models.LogNotificacao
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>LogNotificacao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Data" class="control-label"></label>
+                <input asp-for="Data" class="form-control" />
+                <span asp-validation-for="Data" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Operacao" class="control-label"></label>
+                <input asp-for="Operacao" class="form-control" />
+                <span asp-validation-for="Operacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsuarioId" class="control-label"></label>
+                <input asp-for="UsuarioId" class="form-control" />
+                <span asp-validation-for="UsuarioId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NotificacoesId" class="control-label"></label>
+                <select asp-for="NotificacoesId" class="form-control" asp-items="ViewBag.NotificacoesId"></select>
+                <span asp-validation-for="NotificacoesId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Notificacoes_AntigoId" class="control-label"></label>
+                <select asp-for="Notificacoes_AntigoId" class="form-control" asp-items="ViewBag.Notificacoes_AntigoId"></select>
+                <span asp-validation-for="Notificacoes_AntigoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Notificacoes_NovoId" class="control-label"></label>
+                <select asp-for="Notificacoes_NovoId" class="form-control" asp-items="ViewBag.Notificacoes_NovoId"></select>
+                <span asp-validation-for="Notificacoes_NovoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caçamba Online</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" />
+</head>
+<body>
+
+    <!--Classe geral onde será executado o slide full screen!-->
+    <div class="slider">
+        <!--Estas são as classes dos slides própriamente dita, note que o slide que estiver seguido current que será exibido no momento.-->
+        <div class="slide current">
+            <!--Neste momento temos a classe context que será o conteúdo de cada slide.-->
+            <div class="context">
+                <h1>Caçamba Online - De olho na cidade</h1>
+                <p>Sistema de gerenciamento de Caçamba em toda a cidade de Vila Velha</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="context">
+                <h1>Fiscalização em tempo real</h1>
+                <p>Você também pode nos ajudar, ligando para:</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="context">
+                <h1>Cidade limpa</h1>
+                <p>Sistema de gerenciamento de Caçamba em toda a cidade de Vila Velha</p>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="prev"><i class="fas fa-arrow-left"></i></button>
+        <button id="prev"><i class="fas fa-arrow-right"></i></button>
+
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

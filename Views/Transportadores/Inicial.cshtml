@@ -1,0 +1,49 @@
+﻿@model IEnumerable<cacambaonline.Models.Transportadores>
+
+@{
+    ViewData["Title"] = "Transportadores";
+}
+
+<h2>@ViewData["Title"]</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" style="text-align:center">
+            <div class="card mb-2 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Quero me cadastrar</h4>
+                </div>
+                <div class="card-body">
+                    
+                    <a href="~/Transportadores/Create">  <button type="button" class="btn btn-lg btn-block btn-primary">Cadastrar minha Transportadora</button> </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" style="text-align:center">
+            <div class="card mb-2 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Cadastrar minha Caçamba</h4>
+                </div>
+                <div class="card-body">
+                    <a href="~/Cacambas/Create">  <button type="button" class="btn btn-lg btn-block btn-primary">Cadastrar Caçamba</button> </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="text-align:center">
+      <div class="card mb-2 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Cadastrar Gerador </h4>
+                </div>
+                <div class="card-body">
+                    <a href="~/Cacambas/Create">  <button type="button" class="btn btn-lg btn-block btn-primary">Cadastrar Origem do Entulho</button> </a>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+
+    </tbody>
+</table>

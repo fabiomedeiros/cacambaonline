@@ -1,0 +1,101 @@
+﻿@model cacambaonline.Models.CTR
+
+@{
+    ViewData["Title"] = "Baixa CTR";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+
+<p></p>
+<h3 class="text-success">@ViewData["alerta"]</h3>
+<p></p>
+
+
+
+<div class="card" id="passo2">
+<div class="card-header">
+    Confira a CTR
+<div class="card-body">
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Baixa">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+                @*    <div class="form-inline">
+                    <input type="radio" value="True" asp-for="Fechada" checked /> FECHAR <br />
+                    <input type="radio" value="False" asp-for="Fechada" /> ABERTO <br />
+            </div>*@
+
+            <div class="form-group">
+                <label asp-for="Localizacao" class="control-label"></label>
+                <input asp-for="Localizacao" readonly class="form-control" />
+                <span asp-validation-for="Localizacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Latitude" class="control-label"></label>
+                        <input asp-for="Latitude" readonly class="form-control" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Longitude" class="control-label"></label>
+                        <input asp-for="Longitude" readonly class="form-control" />
+                <span asp-validation-for="Longitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Data" class="control-label"></label>
+                        <input asp-for="Data" readonly readonly class="form-control" />
+                <span asp-validation-for="Data" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransportadoresId" class="control-label"></label>
+                <select asp-for="TransportadoresId" disabled  class="form-control" asp-items="ViewBag.TransportadoresId"></select>
+                <span asp-validation-for="TransportadoresId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CacambasId" class="control-label"></label>
+                <select asp-for="CacambasId" disabled  class="form-control" asp-items="ViewBag.CacambasId"></select>
+                <span asp-validation-for="CacambasId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DestinatariosId" class="control-label"></label>
+                <select asp-for="DestinatariosId" disabled  class="form-control" asp-items="ViewBag.DestinatariosId"></select>
+                <span asp-validation-for="DestinatariosId" class="text-danger"></span>
+            </div>
+
+                        <div class="form-group">
+                            <label asp-for="Fechada" class="control-label">CTR baixada:</label>
+                            <input asp-for="Fechada"  readonly class="form-control" />
+                           @* <input id="abertofechado" name="abertofechado" readonly class="form-control" />*@
+                           
+                        </div>
+
+            <p></p>
+
+            <div class="form-group">
+                <input type="submit" value="Baixar CTR" class="btn btn-primary" /> | <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+   
+
+       
+
+
+}
+
+
+

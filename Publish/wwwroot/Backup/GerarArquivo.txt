@@ -1,0 +1,331 @@
+  //PdfSharpCore geração de relatório
+        public FileResult GerarNotificaçãoPdf(string busca, int? ctrid, int? transportadorid, int? cacambaid)
+        {
+            //string busca = Request.Query["busca"];
+
+            if (busca == "undefined")
+            {
+                busca = "";
+            }
+            //var meuDbContext = _context.Notificacoes.Include(c => c.Cacambas).Include(c => c.CTRId).Include(c => c.Transportadores);
+
+            //var meuDbContext = _context.Infracoes;
+
+           // var usuarios =  _IdentityContext.Users;
+
+        
+
+
+
+            var meuDbContext = from n in _context.Notificacoes
+                               join ctr in _context.CTR on n.CTRId equals ctr.Id
+                               join t in _context.Transportadores on n.TransportadoresId equals t.Id
+                               join i in _context.Infracoes on n.InfracoesId equals i.Id
+                               select new
+                               {
+                                   Notificacao = n.Id,
+                                   n.CTRId,
+                                   n.UsuarioFiscalId,
+                                   t.Cnpj,
+                                   t.NomeEmpresarial,
+                                   t.NomeFantasia,
+                                   t.EnderecosTransportador.Logradouro,
+                                   t.EnderecosTransportador.Numero,
+                                   t.EnderecosTransportador.Bairro,
+                                   t.EnderecosTransportador.Cidade,
+
+                                   n.Localizacao,
+                                   n.Data,
+                                   IdentificacaoCacamba = ctr.Cacambas.Numero,
+                                   TipoInfracao = i.Descricao,
+                                   n.Obs,
+
+                                   n.Foto1,
+                                   n.Foto2
+                               };
+
+            if (ctrid != null)
+            {
+                meuDbContext = from n in _context.Notificacoes
+                               join ctr in _context.CTR on n.CTRId equals ctr.Id
+                               join t in _context.Transportadores on n.TransportadoresId equals t.Id
+                               join i in _context.Infracoes on n.InfracoesId equals i.Id
+                               select new
+                               {
+                                   Notificacao = n.Id,
+                                   n.CTRId,
+                                   n.UsuarioFiscalId,
+                                   t.Cnpj,
+                                   t.NomeEmpresarial,
+                                   t.NomeFantasia,
+                                   t.EnderecosTransportador.Logradouro,
+                                   t.EnderecosTransportador.Numero,
+                                   t.EnderecosTransportador.Bairro,
+                                   t.EnderecosTransportador.Cidade,
+
+                                   n.Localizacao,
+                                   n.Data,
+                                   IdentificacaoCacamba = ctr.Cacambas.Numero,
+                                   TipoInfracao = i.Descricao,
+                                   n.Obs,
+
+                                   n.Foto1,
+                                   n.Foto2
+                               };
+            }
+
+            if (ctrid == null && transportadorid != null && cacambaid != null)
+            {
+                meuDbContext = from n in _context.Notificacoes
+                               join t in _context.Transportadores on n.TransportadoresId equals t.Id
+                               join c in _context.Cacambas on n.CacambasId equals c.Id
+                               join i in _context.Infracoes on n.InfracoesId equals i.Id
+                               select new
+                               {
+                                   Notificacao = n.Id,
+                                   n.CTRId,
+                                   n.UsuarioFiscalId,
+                                   t.Cnpj,
+                                   t.NomeEmpresarial,
+                                   t.NomeFantasia,
+                                   t.EnderecosTransportador.Logradouro,
+                                   t.EnderecosTransportador.Numero,
+                                   t.EnderecosTransportador.Bairro,
+                                   t.EnderecosTransportador.Cidade,
+
+                                   n.Localizacao,
+                                   n.Data,
+                                   IdentificacaoCacamba = c.Numero,
+                                   TipoInfracao = i.Descricao,
+                                   n.Obs,
+
+                                   n.Foto1,
+                                   n.Foto2
+                               };
+            }
+
+            if (ctrid == null && transportadorid != null && cacambaid == null)
+            {
+                meuDbContext = from n in _context.Notificacoes
+                               join t in _context.Transportadores on n.TransportadoresId equals t.Id
+                               join i in _context.Infracoes on n.InfracoesId equals i.Id
+                               select new
+                               {
+                                   Notificacao = n.Id,
+                                   n.CTRId,
+                                   n.UsuarioFiscalId,
+                                   t.Cnpj,
+                                   t.NomeEmpresarial,
+                                   t.NomeFantasia,
+                                   t.EnderecosTransportador.Logradouro,
+                                   t.EnderecosTransportador.Numero,
+                                   t.EnderecosTransportador.Bairro,
+                                   t.EnderecosTransportador.Cidade,
+
+                                   n.Localizacao,
+                                   n.Data,
+                                   IdentificacaoCacamba = n.Descricao,
+                                   TipoInfracao = i.Descricao,
+                                   n.Obs,
+
+                                   n.Foto1,
+                                   n.Foto2
+                               };
+            }
+
+
+
+            var query = from s in meuDbContext
+                        where (s.Notificacao == Convert.ToInt32(busca))
+                        select s;
+
+            //var query = from s in meuDbContext
+            //            where (EF.Functions.Like(s.Cacambas.Descricao, "%" + busca + "%") || EF.Functions.Like(s.Destinatarios.NomeFantasia, "%" + busca + "%") || EF.Functions.Like(s.Transportadores.NomeFantasia, "%" + busca + "%"))
+            //            select s;
+
+            //var notificar = from ctr in _context.CTR
+            //                join cacamba in _context.Cacambas on ctr.CacambasId equals cacamba.Id
+            //                select new { ctr.Id, ctr.Fechada, ctr.Notificado, cacamba.Descricao };
+
+
+            using (var doc = new PdfSharpCore.Pdf.PdfDocument())
+            {
+                var page = doc.AddPage();
+                page.Size = PdfSharpCore.PageSize.A4;
+                page.Orientation = PdfSharpCore.PageOrientation.Landscape;
+                var graphics = PdfSharpCore.Drawing.XGraphics.FromPdfPage(page);
+                var corFonte = PdfSharpCore.Drawing.XBrushes.Black;
+
+                var textFormatter = new PdfSharpCore.Drawing.Layout.XTextFormatter(graphics);
+                var fonteOrganzacao = new PdfSharpCore.Drawing.XFont("Arial", 10);
+                var fonteDescricao = new PdfSharpCore.Drawing.XFont("Arial", 8, PdfSharpCore.Drawing.XFontStyle.BoldItalic);
+                var titulodetalhes = new PdfSharpCore.Drawing.XFont("Arial", 14, PdfSharpCore.Drawing.XFontStyle.Bold);
+                var fonteDetalhesDescricao = new PdfSharpCore.Drawing.XFont("Arial", 8);
+
+                //\arquivos\notificacoes
+
+                var caminhoLogo = Path.Combine(_webHostEnvironment.WebRootPath, @"imagens\LOGO_PMVV_2021_2.png");
+                var logo = caminhoLogo;
+
+                var qtdPaginas = doc.PageCount;
+
+                textFormatter.DrawString(qtdPaginas.ToString(), new PdfSharpCore.Drawing.XFont("Arial", 10), corFonte, new PdfSharpCore.Drawing.XRect(578, 825, page.Width, page.Height));
+
+                // Impressão do LogoTipo
+                XImage imagem = XImage.FromFile(logo);
+                graphics.DrawImage(imagem, 230, 5, 150, 50);
+
+                // Titulo maior 
+                var tituloDetalhes = new PdfSharpCore.Drawing.Layout.XTextFormatter(graphics);
+                tituloDetalhes.Alignment = PdfSharpCore.Drawing.Layout.XParagraphAlignment.Center;
+                tituloDetalhes.DrawString("Notificação", titulodetalhes, corFonte, new PdfSharpCore.Drawing.XRect(0, 70, page.Width, page.Height));
+
+                //Número de registros.
+                tituloDetalhes.DrawString("Qtd: " + meuDbContext.Count().ToString(), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(200, 70, page.Width, page.Height));
+
+                XFont font = new XFont("Times New Roman", 8, XFontStyle.BoldItalic);
+
+                //dados do relatório (Buscar no banco)
+                var alturaDetalhesItens = 160;
+                int countLines = 0;
+
+                if (query != null)
+                {
+                    foreach (var cs in query.OrderByDescending(x => x.Notificacao))
+                    {
+
+                        textFormatter.DrawString("Transportadora", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+
+                        textFormatter.DrawString("CNPJ:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.Cnpj)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.Cnpj), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        }
+                        textFormatter.DrawString("Nome/Razão Social:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.NomeEmpresarial)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.NomeEmpresarial), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(301, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+                        textFormatter.DrawString("Nome/Fantasia:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.NomeFantasia)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.NomeFantasia), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(381, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+                        textFormatter.DrawString("Endereço:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.Logradouro)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.Logradouro), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(451, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+                        textFormatter.DrawString("Nº:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.Numero)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.Numero), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(451, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+                        textFormatter.DrawString("Bairro:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.Bairro)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.Bairro), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(451, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+                        textFormatter.DrawString("Cidade:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.Cidade)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.Cidade), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(451, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+
+                        textFormatter.DrawString("Fiscalização", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+
+                        var usuarios = _IdentityContext.Users
+                      .FirstOrDefault(m => m.Id == cs.UsuarioFiscalId);
+                        //if (infracoes == null)
+                        //{
+                        //    return NotFound();
+                        //}
+
+
+                        textFormatter.DrawString(usuarios.UserName, fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+
+                        textFormatter.DrawString("CNPJ:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.Cnpj)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.Cnpj), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(451, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+                        textFormatter.DrawString("Endereço:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.Localizacao)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.Localizacao), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(451, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+                        textFormatter.DrawString("Data da Fiscalização:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.Data)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.Data), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(451, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+                        textFormatter.DrawString("Observação da Fiscalização:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.Obs)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.Obs), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(451, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+                        textFormatter.DrawString("Identificação da Caçamba:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.IdentificacaoCacamba)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.IdentificacaoCacamba), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(451, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+                        textFormatter.DrawString("Tipo de Infração:", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+                        if (!String.IsNullOrWhiteSpace(Convert.ToString(cs.TipoInfracao)))
+                        {
+                            textFormatter.DrawString(Convert.ToString(cs.TipoInfracao), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(451, alturaDetalhesItens, page.Width, page.Height));
+                        }
+
+                        textFormatter.DrawString("Imagens", fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(31, alturaDetalhesItens, page.Width, page.Height));
+
+                        if (!string.IsNullOrEmpty(cs.Foto1))
+                        {
+                            var caminhofigura1 = Path.Combine(_webHostEnvironment.WebRootPath, @"arquivos\notificacoes\" + cs.Foto1);
+                            var figura1 = caminhofigura1;
+                            XImage imagem1 = XImage.FromFile(figura1);
+                            graphics.DrawImage(imagem, 230, 5, 150, 50);
+                        }
+
+                        if (!string.IsNullOrEmpty(cs.Foto2))
+                        {
+                            var caminhofigura2 = Path.Combine(_webHostEnvironment.WebRootPath, @"arquivos\notificacoes\" + cs.Foto2);
+                            var figura2 = caminhofigura2;
+                            XImage imagem2 = XImage.FromFile(figura2);
+                            graphics.DrawImage(imagem, 230, 5, 150, 50);
+                        }
+
+                        //textFormatter.DrawString(DateTime.Now.ToString(), fonteDetalhesDescricao, corFonte, new PdfSharpCore.Drawing.XRect(400, alturaDetalhesItens, page.Width, page.Height));
+                        alturaDetalhesItens += 20; //pula linha pq soma 160+20
+                        countLines = countLines + 1;
+
+                    }
+                }
+                else
+                {
+                    ViewData["alertarel"] = "Não foram encontrados registros com filtro especificado.";
+                }
+
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    var contantType = "application/pdf";
+                    doc.Save(stream, false);
+
+                    var nomeArquivo = "Notificacao.pdf";
+
+                    return File(stream.ToArray(), contantType, nomeArquivo);
+                }
+
+
+            }
+
+        }

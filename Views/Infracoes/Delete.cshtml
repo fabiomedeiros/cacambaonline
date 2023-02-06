@@ -1,0 +1,52 @@
+﻿@model cacambaonline.Models.Infracoes
+
+@{
+    ViewData["Title"] = "Excluir";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Tem certeza que deseja excluir essa infração?</h4>
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Obs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Obs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Prazo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Prazo)
+        </dd>
+      @*  <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ctr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ctr.Id)
+        </dd>*@
+        @*<dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UsuarioFiscalId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UsuarioFiscalId)
+        </dd>*@
+    </dl>
+    
+<form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Excluir" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+    </form>
+
+</div>

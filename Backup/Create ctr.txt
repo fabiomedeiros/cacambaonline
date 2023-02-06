@@ -1,0 +1,408 @@
+@model cacambaonline.Models.CTR
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>CTR</h4>
+<hr />
+
+<div class="card" id="passo1">
+    <div class="card-header">
+        Passo 1 - Minha Localização
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label">Logradouro:</label>  <input id="logradouro" type="text" class="form-control" />
+                    <label class="control-label">Número:</label>  <input id="numero" type="text" class="form-control" />
+                    <label class="control-label">Bairro:</label> <input id="bairro" type="text" class="form-control" />
+                    <label class="control-label">Cidade:</label> <input id="ciadde" type="text" class="form-control" />
+                    <label class="control-label">Cep:</label> <input id="cep" type="text" disabled class="form-control" /><br />
+                    <input id="marcar" type="button" value="Buscar Localização" class="btn btn-primary" onclick="chamaMarcacaoEndereco(logradouro.value,numero.value,bairro.value, ciadde.value)" />
+                    <button type="button" class="btn btn-success" onclick="Mudarestado('passo1','passo2')">Próximo Passo</button>
+                </div>
+            </div>
+            <div class="col-md-8">
+
+                <h4>Se quiser, encontre sua Localização pelo mapa (mova a marcação) </h4>
+                <div id="map_canvas" style="width: 95%; height: 432px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card" id="passo2" style="display:none" >
+    <div class="card-header">
+        Passo 2 - Complete o Cadastro
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label asp-for="Localização" class="control-label">Confira sua Localização:</label>
+                        <input asp-for="Localização"  id="Localizacao" name="Localizacao" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Latitude" class="control-label"></label>
+                        <input asp-for="Latitude" disabled class="form-control" />
+                        <span asp-validation-for="Latitude" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Longitude" class="control-label"></label>
+                        <input asp-for="Longitude" disabled class="form-control" />
+                        <span asp-validation-for="Longitude" class="text-danger"></span>
+                    </div>
+                    @*  <div class="form-group">
+                    <label asp-for="Data" class="control-label"></label>
+                    <input asp-for="Data" class="form-control" />
+                    <span asp-validation-for="Data" class="text-danger"></span>
+                    </div>*@
+                    <div class="form-group row">
+                        <label class="col-sm-9">
+                            <label asp-for="TransportadoresId" class="control-label">Transportadora</label>
+                            <select asp-for="TransportadoresId" class="form-control" asp-items="ViewBag.TransportadoresId"></select>
+                        </label>
+                        <div class="col-sm-3">
+                            <label asp-for="TransportadoresId" class="control-label">&nbsp;</label><br />
+                            <input type="submit" asp-controller="Transportadores" action="Index" value="Nova" class="btn btn-success" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-9">
+                            <label asp-for="CacambasId" class="control-label">Caçamba</label>
+                            <select asp-for="CacambasId" class="form-control" asp-items="ViewBag.CacambasId"></select>
+                        </label>
+                        <div class="col-sm-3">
+                            <label asp-for="CacambasId" class="control-label">&nbsp;</label><br />
+                            <input type="submit" asp-controller="Cacambas" action="Index" value="Nova" class="btn btn-success" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DestinatariosId" class="control-label">Destinatário</label>
+                        <select asp-for="DestinatariosId" class="form-control" asp-items="ViewBag.DestinatariosId"></select>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" value="Criar" class="btn btn-primary" />
+                        <button type="button" class="btn btn-success" onclick="Mudarestado('passo1','passo2')">Voltar Passo Anterior</button>
+                    </div>
+                </form>
+                @* <button onclick="getLocation()">Capturar minha Latitude e Longitude</button>*@
+               @* <script>
+                    //function getLocation() {
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    }
+                    else {
+                        x.innerHTML = "O seu navegador não suporta Geolocalização. É necessário atualizá-lo";
+                    }
+                    //}
+                    function showPosition(position) {
+                        //x.innerHTML = "Latitude: " + position.coords.latitude +
+                        //    "<br>Longitude: " + position.coords.longitude;
+
+                        //getEndereco(position.coords.latitude, position.coords.longitude)
+                        document.getElementById("Latitude").value = position.coords.latitude;
+                        document.getElementById("Longitude").value = position.coords.longitude;
+                    }
+                </script>*@
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script type="text/javascript" language="javascript">
+
+        var x = -20.3646863;
+        var y = -40.315792;
+
+        //variavel cria para que seja criado o mapa Google Maps
+        var map = null;
+        //Essa e a funcao que criara o mapa GoogleMaps
+
+        //function chamaMapa() {
+        //aqui vamos definir as coordenadas de latitude e longitude no qual
+        //sera exibido o nosso mapa
+        var latlng = new google.maps.LatLng(-23.64340873969638, -46.730219057147224);
+        //DEFINE A LOCALIZAÇÃO EXATA DO MAPA
+        //aqui vamos configurar o mapa, como o zoom, o centro do mapa, etc
+        var myOptions = {
+            zoom: 15,//utilizaremos o zoom 15
+            center: latlng,//aqui a nossa variavel constando latitude e
+            //longitude ja declarada acima
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        //criando o mapa dentro da div com o id="map_canvas" que ja criamos
+        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+        //DEFINE AS COORDENADAS do ponto exato - CENTRALIZAÇÃO DO MAPA
+        map.setCenter(new google.maps.LatLng(-20.3500813, -40.3229756));
+
+        //}
+        //function getLocation() {
+
+        const options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+
+        function success(pos) {
+            const crd = pos.coords;
+
+            console.log('Your current position is:');
+            console.log(`Latitude : ${crd.latitude}`);
+            console.log(`Longitude: ${crd.longitude}`);
+            console.log(`More or less ${crd.accuracy} meters.`);
+
+            document.getElementById("Latitude").value = crd.latitude;
+            document.getElementById("Longitude").value = crd.longitude;
+        }
+
+        function error(err) {
+            console.warn(`ERROR(${err.code}): ${err.message}`);
+        }
+
+
+        if (navigator.geolocation) {
+            //navigator.geolocation.getCurrentPosition(showPosition);
+            navigator.geolocation.getCurrentPosition(success, error, options);
+            
+        }
+        else {
+            x.innerHTML = "O seu navegador não suporta Geolocalização. É necessário atualizá-lo";
+        }
+        //}
+        function showPosition(position) 
+        {
+            document.getElementById("Latitude").value = position.coords.latitude;
+            document.getElementById("Longitude").value = position.coords.longitude;
+
+             x = position.coords.latitude;
+             y = position.coords.longitude;
+
+             
+        }
+
+        function getcoordenadas()
+        {
+            let px
+            if ('geolocation' in navigator) {
+                navigator.geolocation.getCurrentPosition
+                (
+                    function (position) 
+                    {
+                       let px = position.coords.latitude
+                          //  console.log(px);
+                            
+                    }
+                )
+            }
+            return px;
+        }
+
+
+                var marker = new google.maps.Marker
+                ({
+                    position: {
+                    lat: -20.3646863,
+                    lng: -40.315792
+                    },
+                    map: map,
+                    draggable: true
+
+                })
+
+        function abreLink() {
+            window.open('http://www.google.com.br');
+        }
+
+        function chamaMarcacaoEndereco(logradoro, numero, bairro, cidade) {
+            //colocando o endereco no padrao correto
+            var endereco = logradoro + ", " + numero + ", " + bairro + " - " + cidade;
+            //MUDANDO O ZOOM DO MAPA
+            map.setZoom(17);
+            //Buscando lat e log por endereco (no formato: nome rua, numero, bairro - cidade)
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode({ 'address': endereco }, function (results, status) {
+                //se o retorno de status for ok
+                if (status = google.maps.GeocoderStatus.OK) {
+                    //pega o retorno de result, que sao a latitude e longitude
+                    var latlng = results[0].geometry.location;
+                    //faz marcacao no mapa
+                    var marker = new google.maps.Marker({ position: latlng, map: map, draggable: true });
+
+                    map.setCenter(latlng);//leva o mapa para a posicao da marcacao
+
+                    google.maps.event.addListener(marker, 'dragend', function () {
+                        var lat = marker.getPosition().lat();
+                        var lng = marker.getPosition().lng();
+
+                        document.getElementById("Latitude").value = lat;
+                        document.getElementById("Longitude").value = lng;
+                        document.getElementById("Localizacao").value = results[0].formatted_address;
+
+                    })
+
+                    google.maps.event.addListener(marker, 'click', function () {
+                        var lat = marker.getPosition().lat();
+                        var lng = marker.getPosition().lng();
+
+                        document.getElementById("Latitude").value = lat;
+                        document.getElementById("Longitude").value = lng;
+                        document.getElementById("Localizacao").value = results[0].formatted_address;
+
+                    })
+
+                }
+            });
+        }
+
+        //var marker = new google.maps.Marker
+        //    ({
+        //        position: {
+        //            lat: -20.3500813,
+        //            lng: -40.3229756
+        //        },
+        //        map: map,
+        //        draggable: true
+
+        //    })
+
+        //var marker = new google.maps.Marker
+        //    ({
+        //        position: {
+        //            lat: -20.3646863,
+        //            lng: -40.315792
+        //        },
+        //        map: map,
+        //        draggable: true
+
+        //    })
+
+
+        google.maps.event.addListener(marker, 'dragend', function () {
+            var lat = marker.getPosition().lat();
+            var lng = marker.getPosition().lng();
+            document.getElementById("Latitude").value = lat;
+            document.getElementById("Longitude").value = lng;
+
+            getEndereco(lat, lng);
+
+        })
+
+        google.maps.event.addListener(marker, 'click', function () {
+            var lat = marker.getPosition().lat();
+            var lng = marker.getPosition().lng();
+
+            getEndereco(lat, lng);
+
+            document.getElementById("Latitude").value = lat;
+            document.getElementById("Longitude").value = lng;
+
+        })
+
+        function getEndereco(lat, long) {
+            try {
+                let geocoder = new google.maps.Geocoder;
+                let LatLng = new google.maps.LatLng(lat, long)
+                geocoder.geocode({ 'location': LatLng }, function (results, status) {
+                    let endereco = "Tente Novamente"
+                    if (status === 'OK') {
+                        if (results[1]) {
+                            document.getElementById("Localizacao").value = results[0].formatted_address;
+
+                            //Dividindo a string
+                            var posprimeravirgula = results[0].formatted_address.indexOf(",");
+                            var possegundavirgula = results[0].formatted_address.indexOf(",", posprimeravirgula + 1);
+                            var posterceiravirgula = results[0].formatted_address.indexOf(",", possegundavirgula + 1);
+                            var posquartavirgula = results[0].formatted_address.indexOf(",", posterceiravirgula + 1);
+                            var posprimeratraco = results[0].formatted_address.indexOf("-");
+
+                            var ruasubstring = results[0].formatted_address.substring(0, posprimeravirgula)
+                            var numerosubstring = results[0].formatted_address.substring(posprimeravirgula + 2, posprimeratraco - 1)
+                            var bairrosubstring = results[0].formatted_address.substring(posprimeratraco + 2, possegundavirgula)
+                            var cidadesubstring = results[0].formatted_address.substring(possegundavirgula + 2, posterceiravirgula)
+                            var cepsubstring = results[0].formatted_address.substring(posterceiravirgula + 2, posquartavirgula)
+
+                            logradouro.value = ruasubstring
+                            numero.value = numerosubstring
+                            bairro.value = bairrosubstring
+                            ciadde.value = cidadesubstring
+                            cep.value = cepsubstring
+
+                            console.log("OK: " + endereco + " - Lat: " + lat + " - Lng: " + long);
+                        }
+                    }
+                    else if (status == 'ZERO_RESULTS') {
+                        clearTimeout(function () {
+                            getEndereco1(lat, long, callback)
+                        })
+                    }
+                    else {
+                        setTimeout(function () {
+                            getEndereco1(lat, long, callback)
+                        }, 3000)
+                        console.log("status: " + status);
+                    }
+                    callback(endereco);
+                });
+            }
+            catch (err) {
+                console.log("Erro na Função 'getEndereco' mensagem do erro: " + err.message);
+            }
+        }
+
+
+    </script>
+
+    <script>
+    //function Mudarestado(el) {
+    //    var display = document.getElementById(el).style.display;
+    //    if(display == "none")
+    //        document.getElementById(el).style.display = 'block';
+    //    else
+    //        document.getElementById(el).style.display = 'none';
+    //}
+     function Mudarestado(el1,el2) {
+        var display1 = document.getElementById(el1).style.display;
+        var display2 = document.getElementById(el2).style.display;
+        if(display1 == "none")
+            document.getElementById(el1).style.display = 'block';
+        else
+            document.getElementById(el1).style.display = 'none';
+
+            if (display2 == "none")
+                document.getElementById(el2).style.display = 'block';
+            else
+                document.getElementById(el2).style.display = 'none';
+
+    }
+
+    </script>
+
+}

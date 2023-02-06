@@ -1,0 +1,38 @@
+﻿@model cacambaonline.Models.UsuarioTransportador
+
+@{
+    ViewData["Title"] = "Editar Associção Usuário/Transportador";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                @*<input asp-for="UserId" class="form-control" />*@
+                <select asp-for="UserId" class="form-control"  asp-items="ViewBag.QueryUser"></select>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransportadoresId" class="control-label"></label>
+                <select asp-for="TransportadoresId" class="form-control" asp-items="ViewBag.TransportadoresId"></select>
+                <span asp-validation-for="TransportadoresId" class="text-danger"></span>
+            </div>
+           <p>&nbsp;</p>
+    <div class="form-group">
+        <input type="submit" value="Alterar" class="btn btn-primary"  /> | <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+    </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

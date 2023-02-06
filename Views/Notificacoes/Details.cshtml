@@ -1,0 +1,111 @@
+﻿@model cacambaonline.Models.Notificacoes
+
+@{
+    ViewData["Title"] = "Detalhe da Notificação";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h4>Notificacoes</h4>
+    <hr />
+    <dl class="row">
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Infracoes)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Infracoes.Descricao)
+        </dd>
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Obs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Obs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Localizacao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Localizacao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Foto1)
+        </dt>
+        <dd class = "col-sm-10">
+            @*@Html.DisplayFor(model => model.Foto1)*@
+            <image style="width:200px"  src="/arquivos/notificacoes/@Model.Id/@Model.Foto1"></image>
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Foto2)
+        </dt>
+        <dd class = "col-sm-10">
+            <image style="width:200px" src="/arquivos/notificacoes/@Model.Id/@Model.Foto2"></image>
+            @*@Html.DisplayFor(model => model.Foto2)*@
+        </dd>
+       @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Multa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Multa)
+        </dd>*@
+        
+       @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ctr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ctr.Id)
+        </dd>*@
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Transportadores)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ctr.Transportadores.NomeEmpresarial)
+            @Html.DisplayFor(model => model.Transportadores.NomeEmpresarial)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cacambas)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ctr.Cacambas.Descricao)
+            @Html.DisplayFor(model => model.Cacambas.Descricao)
+        </dd>
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UsuarioFiscalId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UsuarioFiscalId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">Editar</a> |
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</div>

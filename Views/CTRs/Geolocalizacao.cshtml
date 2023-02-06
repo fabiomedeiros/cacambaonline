@@ -1,0 +1,520 @@
+﻿@model IEnumerable<cacambaonline.Models.CTR>
+
+
+@{
+    ViewData["Title"] = "Localização das Caçambas em Tempo Real";
+}
+
+<div class="text-center">
+    <p>&nbsp;</p>
+    <h1 class="display-4">Sistema - Gestão de Caçambas</h1>
+    @*<p>&nbsp;</p>
+
+    <input type="submit" value="Atualizar" class="btn btn-primary" onclick="Atualizar()" />
+
+    <p>&nbsp;</p>*@
+
+</div>
+
+<div class="row">
+    <div class="panel panel-primary">
+        @*  <div class="panel-heading" style="text-align: center">
+        <h2>LOCALIZAÇÃO DAS CAÇAMBAS</h2>
+
+        <p>&nbsp;</p>
+
+        <input type="submit" value="Atualizar" class="btn btn-primary" onclick="Atualizar()" />
+
+        <p>&nbsp;</p>
+        </div>*@
+        <div class="panel-body">
+            <div class="col-md-12 text-center">
+
+                <div class="card" id="passo2">
+                    <div class="card-header">
+                        <h3> LOCALIZAÇÃO DAS CAÇAMBAS</h3>
+                    </div>
+                    <div class="card-body">
+
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="map" style="width: 100%; height: 1280px;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 text-center">
+
+                        <h3>LISTA DE CAÇAMBAS</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div id="nomesestacoesdiv"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Id)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Localizacao)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Latitude)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Longitude)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Data)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Transportadores)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Cacambas)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Destinatarios)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.VeiodaNotificacao)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td class="ctrid">
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Localizacao)
+                        </td>
+                        <td class="latitude">
+                            @Html.DisplayFor(modelItem => item.Latitude)
+                        </td>
+                        <td class="longitude">
+                            @Html.DisplayFor(modelItem => item.Longitude)
+                        </td>
+                        <td class="databanco">
+                            @Html.DisplayFor(modelItem => item.Data)
+                        </td>
+                        <td class="Transportadora">
+                            @Html.DisplayFor(modelItem => item.Transportadores.NomeFantasia)
+                        </td>
+                        <td class="Cacamba">
+                            @Html.DisplayFor(modelItem => item.Cacambas.Descricao)
+                        </td>
+                        <td class="Destinatario">
+                            @Html.DisplayFor(modelItem => item.Destinatarios.Id)
+                        </td>
+                        <td class="ctrveiodanotificacao">
+                            @Html.DisplayFor(modelItem => item.VeiodaNotificacao)
+                        </td>
+
+                        @*['01', -20.3316678, -40.2764223, 0, 'R. Gastão Roubach, 2-390 - Praia da Costa, Vila Velha - ES, 29101-012', 'Orla Curva da Sereia'];*@
+                        <td class="localizacao">
+                            ['@Html.DisplayFor(modelItem => item.Transportadores.NomeFantasia)','@Html.DisplayFor(modelItem => item.Data)', @Html.DisplayFor(modelItem => item.Latitude),@Html.DisplayFor(modelItem => item.Longitude),@Html.DisplayFor(modelItem => item.Id),@Html.DisplayFor(modelItem => item.VeiodaNotificacao),'Teste']
+                        </td>
+
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            google.maps.event.addDomListener(window, 'load', initMap);
+            var map;
+            var marcadores = [];
+            var janelas = [];
+
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 14,
+                    //mapTypeId: 'roadmap',
+                    scrollwheel: true,
+                    disableDefaultUI: true,
+                    zoomControl: true,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    center: { lat: -20.3500813, lng: -40.3229756 }
+                });
+
+                setMarkers(map);
+            }
+            // Data for the markers consisting of a name, a LatLng and a zIndex for the
+            // order in which these markers should display on top of each other.
+            //var texto =  ['01', -20.3316678, -40.2764223, 0, 'R. Gastão Roubach, 2-390 - Praia da Costa, Vila Velha - ES, 29101-012', 'Orla Curva da Sereia'];
+
+            @foreach (var item in Model)
+            {
+                //ViewBag.Latitude = @Html.DisplayFor(modelItem => item.Latitude);
+                //ViewBag.Longitude =  @Html.DisplayFor(modelItem => item.Longitude);
+                //ViewBag.Transportadora = @Html.DisplayFor(modelItem => item.Transportadores.Id);
+                //ViewBag.Caçambas = @Html.DisplayFor(modelItem => item.Cacambas.Id);
+                //ViewBag.Destinatarios = @Html.DisplayFor(modelItem => item.Destinatarios.Id);
+                //@Html.HiddenFor(modelItem => item.Transportadores)
+                ViewBag.Construcao = "[" + "'" + @Html.HiddenFor(modelItem => item.Data) + "'" + ',' + @Html.HiddenFor(modelItem => item.Latitude) + ',' + @Html.HiddenFor(modelItem => item.Longitude) + ',' + 0 + ',' + ' ' + "],";
+            }
+
+                                     //var latlon = position.coords.latitude + "," + position.coords.longitude;
+                    var lat = -20.3783959;
+            var long = -40.3113652;
+
+            let elementos = document.getElementsByClassName("localizacao");
+            let latitude = document.getElementsByClassName("latitude");
+            let longitude = document.getElementsByClassName("longitude");
+            let transportadora = document.getElementsByClassName("Transportadora");
+            let cacamba = document.getElementsByClassName("Cacamba");
+            let databanco = document.getElementsByClassName("databanco");
+            let ctrid = document.getElementsByClassName("ctrid");
+            let veiodanotificacao = document.getElementsByClassName("ctrveiodanotificacao");
+
+
+            let valoreselementos = [];
+            let valoreslatitude = [];
+            let valoreslongitude = [];
+            let valorestransportadora = [];
+            let valorescacamba = [];
+            let valoresdata = [];
+            let valoresctrid = [];
+            let valoresveiodanotificacao = [];
+
+            var localizacoes = [];
+
+            for (let i = 0; i < elementos.length; i++) {
+                valoreselementos.push(elementos[i].innerHTML.replace(" ", ""));
+                valoreslatitude.push(latitude[i].innerHTML.replace(" ", ""));
+                valoreslongitude.push(longitude[i].innerHTML.replace(" ", ""));
+                valorestransportadora.push(transportadora[i].innerHTML.replace(" ", ""));
+                valorescacamba.push(cacamba[i].innerHTML.replace(" ", ""));
+                valoresdata.push(databanco[i].innerHTML.replace("", ""));
+                valoresctrid.push(ctrid[i].innerHTML.replace("", ""));
+                valoresveiodanotificacao.push(veiodanotificacao[i].innerHTML.replace("", ""));
+
+                localizacoes.push([valorescacamba, parseFloat(valoreslatitude), parseFloat(valoreslongitude), 0, valoresdata.toString(), valorestransportadora, valoresctrid, valoresveiodanotificacao.toString()]);
+
+                valoreselementos = [];
+                valoreslatitude = [];
+                valoreslongitude = [];
+                valorestransportadora = [];
+                valorescacamba = [];
+                valoresdata = [];
+                valoresctrid = [];
+                valoresveiodanotificacao = [];
+            };
+            //console.log(valoreslatitude);
+            //console.log(valoreslongitude);
+            //console.log(valoreselementos);
+
+            function setMarkers(map) {
+                // Adds markers to the map.
+                // Marker sizes are expressed as a Size of X,Y where the origin of the image
+                // (0,0) is located in the top left of the image.
+                // Origins, anchor positions and coordinates of the marker increase in the X
+                // direction to the right and in the Y direction down.
+                var image = {
+                    url: '/cacambaonline/imagens/cacambaverde.png',
+                    // This marker is 20 pixels wide by 32 pixels high.
+                    size: new google.maps.Size(32, 32),
+                    // The origin for this image is (0, 0).
+                    origin: new google.maps.Point(0, 0),
+                    // The anchor for this image is the base of the flagpole at (0, 32).
+                    anchor: new google.maps.Point(0, 32)
+                };
+
+                var image2 = {
+                    url: '/cacambaonline/imagens/cacambavermelha.png',
+                    // This marker is 20 pixels wide by 32 pixels high.
+                    size: new google.maps.Size(32, 32),
+                    // The origin for this image is (0, 0).
+                    origin: new google.maps.Point(0, 0),
+                    // The anchor for this image is the base of the flagpole at (0, 32).
+                    anchor: new google.maps.Point(0, 32)
+                };
+
+                var image3 = {
+                    url: '/cacambaonline/imagens/cacambaroxa.png',
+                    // This marker is 20 pixels wide by 32 pixels high.
+                    size: new google.maps.Size(32, 32),
+                    // The origin for this image is (0, 0).
+                    origin: new google.maps.Point(0, 0),
+                    // The anchor for this image is the base of the flagpole at (0, 32).
+                    anchor: new google.maps.Point(0, 32)
+                };
+
+                var image4 = {
+                    url: '/cacambaonline/imagens/cacambapreta.png',
+                    // This marker is 20 pixels wide by 32 pixels high.
+                    size: new google.maps.Size(32, 32),
+                    // The origin for this image is (0, 0).
+                    origin: new google.maps.Point(0, 0),
+                    // The anchor for this image is the base of the flagpole at (0, 32).
+                    anchor: new google.maps.Point(0, 32)
+                };
+
+                // Shapes define the clickable region of the icon. The type defines an HTML
+                // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+                // The final coordinate closes the poly by connecting to the first coordinate.
+                var shape = {
+                    coords: [1, 1, 1, 20, 18, 20, 18, 1],
+                    type: 'poly'
+                };
+
+                for (var i = 0; i < localizacoes.length; i++) {
+                    var localizacao = localizacoes[i];
+
+                    //Outro modo de pegar pela data(fmbs)
+                    const data = new Date();
+                    const dia = String(data.getDate()).padStart(2, '0') // 1 => 01
+                    const mes = String(data.getMonth() + 1).padStart(2, '0') // jan = 0, 3 => 03
+                    const ano = data.getFullYear()
+                    const dataAtual = `${ano}-${mes}-${dia}`
+
+                    const dataBanco = (localizacao[4].toString().replace(',', '').trim().substring(0, 10));//new Date(localizacao[3].substring(0, 10));
+
+                    const diab = dataBanco.substring(0, 2).toString()
+                    const mesb = dataBanco.substring(3, 5)
+                    const anob = dataBanco.substring(6, 10)
+                    const dataBancoAtual = `${anob}-${mesb}-${diab}`
+
+                    const diffInMs = new Date(dataAtual) - new Date(dataBancoAtual)
+                    const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
+
+                    //console.log(diffInDays)
+
+                    localizacao[4] = diffInDays.toString();
+
+                    addMarker(localizacao, i);
+                }
+
+                function addMarker(pin, indice) {
+
+                    //Outro modo de pegar pela data(fmbs)
+                    const data = new Date();
+                    const dia = String(data.getDate()).padStart(2, '0') // 1 => 01
+                    const mes = String(data.getMonth() + 1).padStart(2, '0') // jan = 0, 3 => 03
+                    const ano = data.getFullYear()
+                    const dataAtual = `${dia}/${mes}/${ano}`
+
+                    const x = localizacao[0].toString().trim();
+
+                    //console.log(dataAtual)
+                    //console.log(x.substring(0,3))
+
+                    var marker = new google.maps.Marker({
+                        position: { lat: localizacao[1], lng: localizacao[2] },
+                        map: map,
+                        //icon: ((localizacao[4] > 4) ? image2 : image),
+                        //icon: ((localizacao[4] > 4) ? image2 : image),
+                        shape: shape,
+                     
+                    title: localizacao[0],
+                        zIndex: 0,
+                            animation: google.maps.Animation.DROP
+                            });
+
+                 
+                           // Se haver caçamba, executa lógica da data (verde ou vermelha)
+                    //if (localizacao[0] != "" && localizacao[0] != null && localizacao[0] != undefined) {
+                    if (localizacao[7].toString().replace(/\s/g, '').length==0) {
+                                if (localizacao[4] > 4 ) 
+                                {
+                                  marker.setIcon(image2);
+                                }
+                                else
+                                {
+                                   marker.setIcon(image);
+                                }
+                            }
+                            //Senão se não haver caçamba, vai para lógica da escrita (roxa ou preta)
+                            else
+                            {
+                        if (localizacao[7].toString().replace(/\s/g, '') == "CaçambasemCTR") {
+                                  marker.setIcon(image3);
+                               }
+                        else if (localizacao[7].toString().replace(/\s/g, '') == "Caçambanãocadastrada") {
+                                  marker.setIcon(image4);
+                               }
+                            }
+
+                    //console.log("localização 4 é ",localizacao[4].toString());
+                    //console.log("localização 5 é ",localizacao[5].toString());
+                    //console.log("localização 6 é ",localizacao[6].toString());
+                    console.log(localizacao[7].toString().trim());
+                    console.log(localizacao[7].toString().length);
+                    console.log(localizacao[7].toString().replace(/\s/g, ''));
+                    console.log(localizacao[7].toString().replace(/\s/g, '').length);
+                    // console.log("localização 8 é ",localizacao[8].toString());
+
+
+                $('#nomesestacoesdiv').append('<p style="cursor: pointer" onclick="abrirInfo(' + indice + ')"><b>CAÇAMBA - ' + localizacao[0] + ' - ' + localizacao[5] + '</b> <br /> ' + localizacao[4] + '</p>');
+
+                
+                
+                //Usar se precisar utilizar no início na contentString, para diferenciar CTR de nofificação
+                //let iniciostring = "";
+                    
+                //if (localizacao[0].toString().replace(/\s/g, '').length == 0) 
+                //    {
+                //        iniciostring = "NOTIFICAÇÃO: ";
+                //    }
+
+                
+
+                //Lógica para exibir ou não o botão de notificar.
+                let contentString =  localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + ', número de dias: ' + localizacao[4] + '</b> <br /> ' + ' <a class="btn btn-danger"  href="' + 'https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/' + localizacao[6].toString().trim() + '"' + '>NOTIFICAR</a>';
+                if (parseInt(localizacao[4]) > 4) {
+                    contentString =  localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + ', número de dias: ' + localizacao[4] + '</b> <br /> ' + ' <a class="btn btn-danger" href="' + 'https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/' + localizacao[6].toString().trim() + '"' + '>NOTIFICAR</a>';
+                }
+                else {
+                    contentString =  localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + ', número de dias: ' + localizacao[4];
+                }
+
+                var infoWindow = new google.maps.InfoWindow({
+                    content: contentString
+                    //'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> '+', número de dias: '+ localizacao[4]+  ' <a href="' + 'https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/' + localizacao[6].toString().trim() + '"' + '>NOTIFICAR</a>'
+                });
+
+                janelas.push(infoWindow);
+
+                marker.addListener('click', function () {
+                    infoWindow.open(marker.get('map'), this);
+                });
+
+                marcadores.push(marker);
+            }
+
+            //console.log(marcadores);
+                    }
+            function isInfoWindowOpen(infoWindow) {
+                var map = infoWindow.getMap();
+                return (map !== null && typeof map !== "undefined");
+            }
+            function abrirInfo(indice) {
+                map.setCenter(marcadores[indice].getPosition());
+                janelas[indice].open(map, marcadores[indice]);
+            }
+        </script>
+    </div>
+
+
+
+    @section Scripts
+        {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+
+
+
+        <script>
+            function Atualizar() {
+                if ('geolocation' in navigator) {
+                    const watcher = navigator.geolocation.watchPosition(function (position) { window.location.href = '@Url.Action("AtualizarCoordenadas", "CTRs")/?latitude=' + position.coords.latitude + '' + '&longitude=' + position.coords.longitude; })
+                }
+                else {
+                    alert('ops, não foi possível pegar a localização')
+                }
+            }
+        </script>
+
+
+
+        @*   <script>
+    var x=document.getElementById("demo");
+    function getLocation()
+    {
+    if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition,showError);
+    }
+    else{x.innerHTML="Geolocation is not supported by this browser.";}
+    }
+
+    function showPosition(position)
+    {
+    var latlon=position.coords.latitude+","+position.coords.longitude;
+
+    var img_url="https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&sensor=false";
+    document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
+    }
+
+    function showError(error)
+    {
+    switch(error.code)
+    {
+    case error.PERMISSION_DENIED:
+    x.innerHTML="Usuário rejeitou a solicitação de Geolocalização."
+    break;
+    case error.POSITION_UNAVAILABLE:
+    x.innerHTML="Localização indisponível."
+    break;
+    case error.TIMEOUT:
+    x.innerHTML="O tempo da requisição expirou."
+    break;
+    case error.UNKNOWN_ERROR:
+    x.innerHTML="Algum erro desconhecido aconteceu."
+    break;
+    }
+    }
+    </script>
+    *@
+
+
+
+
+        @*<script>
+    if('geolocation' in navigator)
+    {
+    //navigator.geolocation.getCurrentPosition
+    //(
+    //    function(position)
+    //    {
+    //        console.log(position)
+    //    }, function(error)
+    //    {
+    //        console.log(error)
+    //    }
+    //)
+
+    const watcher = navigator.geolocation.watchPosition
+    (
+    function(position)
+    {
+    console.log(position)
+    },
+    function(error)
+    {
+    console.log(error)
+    },
+    {enableHighAccuracy:true, maximumAge:30000, timeout:30000}
+    )
+    navigator.geolocation.clearWatch(watcher)
+    }
+    else
+    {
+    alert('ops, não foi possível pegar alocalização')
+    }
+    </script>*@
+
+    }

@@ -1,0 +1,213 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - cacambaonline</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/cacambaonline.styles.css" asp-append-version="true" />
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAeT0g0KIBJRgVmGVaZrIU78h0r6GKtzDU&libraries=places&callback=initMap"></script>
+
+    @*<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeT0g0KIBJRgVmGVaZrIU78h0r6GKtzDU&callback=initAutoomplete&libraries=places"></script>*@
+
+    @*<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeT0g0KIBJRgVmGVaZrIU78h0r6GKtzDU&callback=initAutoomplete&libraries=places"></script>*@
+
+   @* <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeT0g0KIBJRgVmGVaZrIU78h0r6GKtzDU&libraries=places&callback=initMap">
+</script>*@
+
+
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">cacambaonline</a>*@
+                <a class="navbar-brand" href="#"><img src="~/imagens/LOGO_PMVV_2021_2.png" alt="Girl in a jacket" width="200" height="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+
+                        @*Se o usuário esta logado exibir o link de logout*@
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            @if (User.IsInRole("Adm") || User.IsInRole("Gestor") )
+                            {
+
+
+                                <li>
+                                    <a class="nav-link" asp-area="" asp-controller="CTRs" asp-action="Geolocalizacao">Mapa Geolocalização</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Funções
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                        <li>
+                                            <a class="nav-link" asp-area="" asp-controller="Transportadores" asp-action="Index">Transportadores</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" asp-area="" asp-controller="Cacambas" asp-action="Index">Caçambas</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="nav-link" asp-area="" asp-controller="Destinatarios" asp-action="Index">Destinatários</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" asp-area="" asp-controller="CTRs" asp-action="Index">CTRs</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="nav-link" asp-area="" asp-controller="UsuarioTransportadores" asp-action="Index">Usuário/Transportador</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="nav-link" asp-area="" asp-controller="UsuarioDestinatarios" asp-action="Index">Usuário/Destinatário</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="nav-link" asp-area="" asp-controller="Notificacoes" asp-action="Index"> Notificações</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" asp-area="" asp-controller="Infracoes" asp-action="Index">Infrações</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Gestor de Usuários
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                       @* <li class="nav-item">
+                                            <a class="nav-link text-dark" asp-area="" enabled asp-controller="Roles" asp-action="Index">Papéis</a>
+                                        </li>*@
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark" asp-area="" asp-controller="Roles" asp-action="Gerenciar">Gerenciar</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            }
+
+                            @if (User.IsInRole("Fiscal"))
+                            {
+                                 <li>
+                                    <a class="nav-link" asp-area="" asp-controller="CTRs" asp-action="Geolocalizacao">Mapa Geolocalização</a>
+                                </li>
+                                 <li>
+                                    <a class="nav-link" asp-area="" asp-controller="CTRs" asp-action="Index">CTRs</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" asp-area="" asp-controller="Notificacoes" asp-action="Index">Notificação</a>
+                                </li>
+                            }
+
+
+                            @if (User.IsInRole("Transportador") )
+                            {
+                                <li>
+                                    <a class="nav-link" asp-area="" asp-controller="Cacambas" asp-action="Index">Caçambas</a>
+                                </li>
+
+                                <li>
+                                    <a class="nav-link" asp-area="" asp-controller="CTRs" asp-action="Index">CTRs</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" asp-area="" asp-controller="Notificacoes" asp-action="Index">Minhas Notificaçõs</a>
+                                </li>
+                            }
+
+
+                            @*Fechar a CTR*@
+                            @if (User.IsInRole("Destinatario"))
+                            {
+                                <li>
+                                    <a class="nav-link" asp-area="" asp-controller="CTRs" asp-action="Index">CTRs</a>
+                                </li>
+                                
+                            }
+
+                                
+
+                      
+
+
+                        }
+
+                    </ul>
+
+                    <partial name="_LoginPartial"></partial>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+
+
+
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - cacambaonline - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @*const watcher = navigator.geolocation.watchPosition(function (position) { window.location.href = '@Url.Action("AtualizarCoordenadas", "CTRs")/?latitude=' + position.coords.latitude + '' + '&longitude=' + position.coords.longitude; })*@
+    @*navigator.geolocation.clearWatch(watcher)*@
+   @* @if (SignInManager.IsSignedIn(User))
+    {
+        @if (User.IsInRole("Transportador"))
+        {
+            <script>
+                if ('geolocation' in navigator) 
+                {
+                const watcher = navigator.geolocation.watchPosition
+                (
+                function (position) {
+                window.location.href = '@Url.Action("AtualizarCoordenadas", "CTRs")/?latitude=' + position.coords.latitude + '' + '&longitude=' + position.coords.longitude;
+                },
+                function (error) {
+                console.log(error)
+                },
+                {
+                enableHighAccuracy: true, maximumAge: 30000, timeout: 30000
+                }
+
+                )
+
+                }
+
+                else {
+                alert('ops, não foi possível pegar alocalização')
+                }
+            </script>
+        }
+
+    }*@
+
+   
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

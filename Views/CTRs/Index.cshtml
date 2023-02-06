@@ -1,0 +1,241 @@
+﻿@using System;
+
+@model IEnumerable<cacambaonline.Models.CTR>
+
+@{
+    ViewData["Title"] = "Lista de CTR´s";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Nova CTR</a>
+</p>
+
+<div class="alert alert-secondary" role="alert">
+    <p><b>A busca é feito pelo Caçamba ou Transportadora ou Destinatário</b></p>
+    <div class="row">
+        <div class="col-md-4">
+            @*<input type="text" id="itexto" name="itexto" class="form-control" />*@
+            <input type="text" id="itexto" name="itexto" class="form-control" />
+        </div>
+        <div class="col-md-4">
+            <button type="button" onclick="PesquisaCtr(itexto)" class="btn btn-secondary"> Pesquisar</button>
+            <button type="button" onclick="gerarrelatorio(itexto)" class="btn btn-secondary"> Baixar Relatório </button>
+        </div>
+    </div>
+</div>
+
+
+@{
+    <h5 class="text-danger">@ViewBag.alerta</h5>
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            @*  <th>
+            @Html.DisplayNameFor(model => model.Localização)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model.Latitude)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model.Longitude)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model.Data)
+            </th>*@
+            <th>
+                Status (Regular/Atraso)
+            </th>
+
+            <th>
+               Já foi notificado ?
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Transportadores)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cacambas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destinatarios)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>
+                    @if (DateTime.Now.Date > item.Data.AddDays(4).Date)
+                    {
+                        <span class="btn btn-danger"><spam class="fa fa-truck" title="CTR em Atraso"></spam></span>
+                    }
+            else
+                    {
+                        <span class="btn btn-success"><spam class="fa fa-truck" title="CTR Regular"></spam></span>
+                    }
+                </td>
+
+                 <td>
+                    @if (DateTime.Now.Date > item.Data.AddDays(4).Date)
+                    {
+                         <span style="color:red">
+                            @if (item.Notificado == true)
+                            {
+                                <span>Sim</span>
+                            }
+                            else
+                            {
+                                <span>Não</span>
+                            }
+                             @*@Html.DisplayFor(modelItem => item.Notificado)*@
+                         </span>
+                    }
+                    else
+                    {
+                        @if (item.Notificado == true)
+                        {
+                            <span>Sim</span>
+                        }
+                        else
+                        {
+                            <span>Não</span>
+                        }
+                        @*<span style="color:green">@Html.DisplayFor(modelItem => item.Notificado)</span>*@
+                    }
+                </td>
+
+
+                <td>
+                    @if (DateTime.Now.Date > item.Data.AddDays(4).Date)
+                    {
+                         <span style="color:red">@Html.DisplayFor(modelItem => item.Transportadores.NomeFantasia)</span>
+                    }
+                    else
+                    {
+                        <span style="color:green">@Html.DisplayFor(modelItem => item.Transportadores.NomeFantasia)</span>
+                    }
+                </td>
+                <td>
+                     @if (DateTime.Now.Date > item.Data.AddDays(4).Date)
+                    {
+                        <span style="color:red">@Html.DisplayFor(modelItem => item.Cacambas.Descricao)</span>
+                    }
+                    else
+                    {
+                        <span style="color:green">@Html.DisplayFor(modelItem => item.Cacambas.Descricao)</span>
+                    }
+                    
+                </td>
+
+                <td>
+                    @if (DateTime.Now.Date > item.Data.AddDays(4).Date)
+                    {
+                        <span style="color:red">@Html.DisplayFor(modelItem => item.Destinatarios.NomeFantasia)</span>
+                    }
+                    else
+                    {
+                        <span style="color:green">@Html.DisplayFor(modelItem => item.Destinatarios.NomeFantasia)</span>
+                    }
+
+                </td>
+
+                @*|| User.IsInRole("Transportador") || User.IsInRole("Fiscal")*@
+                <td class="text-right">
+                    @if (User.IsInRole("Adm") || User.IsInRole("Gestor") )
+                    {
+                        @*<a class="btn btn-warning" asp-action="Details" asp-route-id="@item.Id">Notificar </a>*@
+                        <a class="btn btn-warning" asp-action="Details" title="Detalhe" asp-route-id="@item.Id"><spam class="fa fa-search"></spam> </a>
+                        <a class="btn btn-info" asp-action="Edit" title="Editar" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam> </a>
+                        <a class="btn btn-danger" asp-action="Delete" title="Deletar" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam> </a>
+                        
+                        @if (item.Notificado == true)
+                        {
+                            <a class="btn btn-danger" disable><spam class="fa fa-book"></spam> Já Notificado</a>
+                        }else
+                        {
+                            @*--<a class="btn btn-danger" asp-action="Notificar" title="Notificar" asp-route-id="@item.Id"><spam class="fa fa-book"></spam> Notificar</a>*@
+                             //<a class="btn btn-danger" asp-controller="Notificacoes" asp-action="Create" title="Notificar" asp-route-id="@item.Id"><spam class="fa fa-book"></spam> Notificar </a>
+
+                            @if (DateTime.Now.Date < item.Data.AddDays(4).Date)
+                            {
+                                <a class="btn btn-danger" asp-controller="Notificacoes" asp-action="Create" title="Notificar" asp-route-id="@item.Id"><spam class="fa fa-book"></spam> Notificar </a>
+
+                            }
+                            else
+                            {
+                                <a class="btn btn-primary" disable><spam class="fa fa-book"></spam> Ctr Regular</a>
+                            }
+
+
+                        }
+                        
+                    }
+                    @if (User.IsInRole("Fiscal"))
+                    {
+                        <a class="btn btn-warning" asp-action="Details" title="Detalhe" asp-route-id="@item.Id"><spam class="fa fa-search"></spam> </a>
+                        @*<a class="btn btn-danger" asp-action="Notificar" title="Notificar" asp-route-id="@item.Id"><spam class="fa fa-book"></spam> Notificar </a>*@
+                        
+                      
+
+                        @if (item.Notificado == true)
+                        {
+                            <a class="btn btn-secondary" disable><spam class="fa fa-book"></spam> Já Notificado</a>
+                        }else
+                        {
+
+                            @if (DateTime.Now.Date > item.Data.AddDays(4).Date)
+                            {
+                                <a class="btn btn-danger" asp-controller="Notificacoes" asp-action="Create" title="Notificar" asp-route-id="@item.Id"><spam class="fa fa-book"></spam> Notificar </a>
+                                
+                            }
+                            else
+                            {
+                                <a class="btn btn-primary" disable><spam class="fa fa-book"></spam> Ctr Regular</a>
+                            }
+
+
+                         }
+
+
+                        //<a href="/cacambaonline/Notificacoes/Create/"+""></a>
+                    }
+                    @if (User.IsInRole("Destinatario"))
+                            {
+                        <a class="btn btn-warning" asp-action="Details" title="Detalhe" asp-route-id="@item.Id"><spam class="fa fa-search"></spam> </a>
+                        <a class="btn btn-danger" asp-action="Baixa" asp-route-id="@item.Id">Baixa de CTR </a>
+                            }
+                    @*<i class="fa-solid fa-hands-holding-diamond"></i>*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+       
+        function PesquisaCtr(val) {
+            window.location.href = "/cacambaonline/CTRs/Index/?busca=" + val.value;
+        }
+
+         function gerarrelatorio(val) {
+            window.location.href = "/cacambaonline/CTRs/GerarRelatorio?busca=" + val.value;
+        }
+    </script>
+
+
+               }

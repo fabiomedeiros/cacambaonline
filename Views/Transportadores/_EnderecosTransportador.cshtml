@@ -1,0 +1,57 @@
+﻿@model cacambaonline.Models.Transportadores
+
+<div class="row">
+    <div class="col-md-12">
+      
+            <div class="form-group">
+                <label asp-for="EnderecosTransportador.CEP" class="control-label"></label>
+                <input asp-for="EnderecosTransportador.CEP" class="form-control" />
+                <span asp-validation-for="EnderecosTransportador.CEP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnderecosTransportador.Cidade" class="control-label"></label>
+                <input asp-for="EnderecosTransportador.Cidade" class="form-control" />
+                <span asp-validation-for="EnderecosTransportador.Cidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnderecosTransportador.Estado" class="control-label"></label>
+                <input asp-for="EnderecosTransportador.Estado" class="form-control" />
+                <span asp-validation-for="EnderecosTransportador.Estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnderecosTransportador.Bairro" class="control-label"></label>
+                <input asp-for="EnderecosTransportador.Bairro" class="form-control" />
+                <span asp-validation-for="EnderecosTransportador.Bairro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnderecosTransportador.Logradouro" class="control-label"></label>
+                <input asp-for="EnderecosTransportador.Logradouro" class="form-control" />
+                <span asp-validation-for="EnderecosTransportador.Logradouro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnderecosTransportador.Numero" class="control-label"></label>
+                <input asp-for="EnderecosTransportador.Numero" class="form-control" />
+                <span asp-validation-for="EnderecosTransportador.Numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnderecosTransportador.Complemento" class="control-label"></label>
+                <input asp-for="EnderecosTransportador.Complemento" class="form-control" />
+                <span asp-validation-for="EnderecosTransportador.Complemento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnderecosTransportador.Latitude" class="control-label"></label>
+                <input asp-for="EnderecosTransportador.Latitude" class="form-control" />
+                <span asp-validation-for="EnderecosTransportador.Latitude" class="text-danger"></span>
+            </div> 
+            <div class="form-group">
+                <label asp-for="EnderecosTransportador.Longitude" class="control-label"></label>
+                <input asp-for="EnderecosTransportador.Longitude" class="form-control" />
+                <span asp-validation-for="EnderecosTransportador.Longitude" class="text-danger"></span>
+            </div>
+           @* <div class="form-group">
+                <label asp-for="EnderecosTransportador.TransportadoresId" class="control-label">Transportadora</label>
+                <select asp-for="EnderecosTransportador.TransportadoresId" class ="form-control" asp-items="ViewBag.TransportadoresId"></select>
+            </div>*@
+            
+    </div>
+</div>

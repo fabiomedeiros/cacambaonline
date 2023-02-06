@@ -1,0 +1,117 @@
+﻿@model IEnumerable<cacambaonline.Models.Notificacoes>
+
+@{
+    ViewData["Title"] = "Lista de Notificações";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Nova Notificação</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Obs)
+            </th>
+          @*  <th>
+                @Html.DisplayNameFor(model => model.Localizacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Latitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Longitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foto1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foto2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Multa)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Ctr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsuarioFiscalId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Obs)
+            </td>
+          @*  <td>
+                @Html.DisplayFor(modelItem => item.Localizacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Latitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Longitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foto1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foto2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Multa)
+            </td>*@
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Ctr.Id)*@
+                    @foreach (var cacamba in ViewBag.Cacamba)
+                    {
+                        @if (ViewBag.CacambasId != null)
+                        {
+                      
+                            @if (Convert.ToInt32(cacamba.Value) == Convert.ToInt32(item.Ctr.CacambasId))
+                            {
+                                <div>@cacamba.Text</div>
+                            }
+
+                        }
+                    }
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.UsuarioFiscalId)*@
+                    @foreach (var usuario in ViewBag.Usuario)
+                    {
+                        @if (Convert.ToString(usuario.Value) == Convert.ToString(item.UsuarioFiscalId))
+                        {
+                            <div>@usuario.Text</div>
+                        }
+                    }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+                 <td class="text-right">
+                        <a class="btn btn-warning" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search"></spam> </a>
+                        <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam> </a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam> </a>
+
+                    <a class="btn btn-secondary" asp-action="NaoAssinada" asp-route-id="@item.Id">Baixar Notificação</a>
+                        @*<a class="btn btn-primary" asp-action="Assinada" asp-route-id="@item.Id">Notificação Assinada</a>*@
+                  </td>
+        </tr>
+}
+    </tbody>
+</table>

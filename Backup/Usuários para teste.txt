@@ -1,0 +1,168 @@
+Administrador
+--------------
+adm@gmail.com
+Teste@123456
+--------------
+
+Gestor
+--------------
+gestor@gmail.com
+Teste@123456
+--------------
+
+Fiscal
+--------------
+fiscal@gmail.com
+Teste@123456
+--------------
+
+Transportador
+--------------
+transportador@gmail.com
+Teste@123456
+--------------
+
+Destinatário
+--------------
+destinatario@gmail.com
+Teste@123456
+--------------
+
+
+select * from Notificacoes
+
+select * from Notificacoes
+
+
+Delete LogCTR
+Delete CTR_antigo
+Delete CTR_novo
+Delete CTR
+
+DBCC CHECKIDENT('LogCTR', RESEED, 0)
+DBCC CHECKIDENT('CTR_antigo', RESEED, 0)
+DBCC CHECKIDENT('CTR_novo', RESEED, 0)
+DBCC CHECKIDENT('CTR', RESEED, 0)
+
+
+Delete LogNotificacoes
+Delete Notificacoes_Antigas
+Delete Notificacoes_Novas
+Delete Notificacoes
+
+DBCC CHECKIDENT('LogNotificacoes', RESEED, 0)
+DBCC CHECKIDENT('Notificacoes_Antigas', RESEED, 0)
+DBCC CHECKIDENT('Notificacoes_Novas', RESEED, 0)
+DBCC CHECKIDENT('Notificacoes', RESEED, 0)
+
+
+
+
+
+
+
+---------------------------------------------------
+Quando entrar no geolocalização ( já geolocalizar o fiscal no mapa ). Ser a geolocalização do dispositivo.
+
+
+Notificação por e-mail também
+
+Vencida (laranja)
+
+- caçamba não cadastrada (notificação) - Transportador e a caçamba (Preta)
+
+- caçamba cadastrada, mas sem CTR.  - Transportador e a caçamba (Vermelha)
+
+https://novo.vilavelha.es.gov.br/cacambaonline/CTRs
+Vericiar a lógica do botão CTr Regular
+
+Quando notificado deve ser gerado um (PDF) parametrizado.
+
+
+
+
+
+
+
+
+
+É porque você usa return View(RedirectToAction("Index"));em sua ação. CreateTente usar return RedirectToAction("Index");para substituir return View(RedirectToAction("Index"));.
+
+
+     public DbSet<UsuarioTransportador>? UsuarioTransportadores { get; set; }
+    public DbSet<UsuarioDestinatario>? UsuarioDestinatarios { get; set; }
+
+https://www.vilavelha.es.gov.br/midia/paginas/BALNEABILIDADE_Campanha_28_12_2022_GERAL_MAPA.pdf
+
+
+ //' <a href="https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/"' + '"' + localizacao[6] + '"' + '>NOTIFICAR</a>'
+
+                                        String urlmontada = "https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/" + localizacao[6];
+
+                    if  ( localizacao[4] < 4 )
+                    {
+                              localizacao[6] = '<a href ='+urlmontada+'> NOTIFICAR < /a>'
+                    }
+                    else    
+                    {
+                        localizacao[6]='';
+                    }
+
+
+
+  //  if  ( localizacao[4] < 4 )
+                    //{
+                    //    content: 'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + localizacao[4] + ' <a href="https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/"' + '"' + localizacao[6] + '"' + '>NOTIFICAR</a>'
+                    //}
+                    //else    
+                    //{
+                    //    content: 'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + localizacao[4] 
+                    //}
+
+
+  var loc = "https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/" + localizacao[6];
+
+                        content: 'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + localizacao[4] + '<a href="'loc +'">Notificar</a>');
+
+
+ var loc = "https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/" + localizacao[6];
+
+                        document.write( '<a href="'loc +'">Notificar</a>');
+
+                        content: 'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + localizacao[4] + '<a href="'+loc +'">Notificar</a>');
+
+
+
+     content: 'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + localizacao[4] + content: 'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + localizacao[4] + ' <a href="https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/"' + '"' + localizacao[6] + '"' + '>NOTIFICAR</a>');
+
+="width:250px;height:150px;"
+
+
+  if(parseInt(localizacao[4]) >4)
+                        {
+                        content: 'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> '+', número de dias: '+ localizacao[4]+ + ' <a href="' + 'https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/' + localizacao[6].toString().trim() + '"' + '>NOTIFICAR</a>'
+                        }
+
+
+
+
+
+ //Lógica para exibir ou não o botão de notificar.
+                    let contentString = 'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + ', número de dias: ' + localizacao[4] + '</b> <br /> '+' <a class="btn btn-danger"  href="' + 'https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/' + localizacao[6].toString().trim() + '"' + '>NOTIFICAR</a>';
+                    if (parseInt(localizacao[4]) > 4) {
+                        contentString = 'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + ', número de dias: ' + localizacao[4] +'</b> <br /> '+ ' <a class="btn btn-danger" href="' + 'https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/' + localizacao[6].toString().trim() + '"' + '>NOTIFICAR</a>';
+                    }
+                    else {
+                        contentString = 'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + ', número de dias: ' + localizacao[4];
+                    }
+
+                var infoWindow = new google.maps.InfoWindow({
+                        
+
+                        content: contentString
+                        
+                        //'CAÇAMBA: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> '+', número de dias: '+ localizacao[4]+  ' <a href="' + 'https://novo.vilavelha.es.gov.br/cacambaonline/Notificacoes/Create/' + localizacao[6].toString().trim() + '"' + '>NOTIFICAR</a>'
+                                    
+                });
+
+

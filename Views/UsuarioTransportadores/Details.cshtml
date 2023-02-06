@@ -1,0 +1,33 @@
+﻿@model cacambaonline.Models.UsuarioTransportador
+
+@{
+    ViewData["Title"] = "Detalhe - Associção Usuário/Transportador";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UserId)
+          
+        </dt>
+        <dd class = "col-sm-10">
+            @*@Html.DisplayFor(model => model.UserId)*@
+            <p><select asp-for="UserId" class="form-control" disabled asp-items="ViewBag.QueryUser"></select></p>
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Transportadores)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Transportadores.NomeFantasia)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" class="btn btn-primary"
+ asp-route-id="@Model?.Id">Editar</a> |
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</div>

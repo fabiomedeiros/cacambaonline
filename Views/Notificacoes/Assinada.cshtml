@@ -1,0 +1,56 @@
+﻿@model cacambaonline.Models.Notificacoes
+
+@{
+    ViewData["Title"] = "Nova Notificação";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<hr />
+<p></p>
+<h3 class="text-danger">@ViewData["alerta"]</h3>
+<p></p>
+
+<p></p>
+<div class="row">
+    <div class="col-md-8">
+        <form enctype="multipart/form-data" asp-action="Assinada">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            
+            <br />
+            <div class="form-group">
+                <label  class="control-label">Notificação</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="UploadFoto1" asp-for="UploadFoto1" />
+                    <label data-browse="Procurar" style="width:400px" class="custom-file-label" for="UploadFoto1"></label>
+                    <label style="display:none" id="foto1_nome"></label>
+                </div>
+                <span asp-validation-for="UploadFoto1" class="text-danger"></span>
+            </div>
+          
+       
+          
+            <p></p>
+            <div class="form-group">
+               @if (Convert.ToString(@ViewData["alerta"]) == "")
+                {
+                    <input type="submit" value="Cadastrar" class="btn btn-primary" /> 
+                }
+                 <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+   
+
+}

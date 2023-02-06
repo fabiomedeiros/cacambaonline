@@ -1,0 +1,330 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <p>&nbsp;</p>
+    <h1 class="display-4">Sistema - Gestão de Caçambas</h1>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div class="container-fluid">
+        <div class="row">
+           
+            <div class="col-md-12">
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+ <div style="text-align: center">
+        @*<img src="/imagens/logo.png" />*@
+    </div>
+   
+    
+
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading" style="text-align: center">
+                <h2>LOCALIZAÇÃO DAS CAÇAMBAS </h2>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-12 text-center">
+
+                    <div id="map" style="width: 100%; height: 1280px;"></div>
+                  @*  <h2>
+                        <asp:Image ImageUrl="~/Content/img/cycling.png" runat="server" />
+                        ESTAÇÕES JÁ IMPLANTADAS
+                    </h2>
+                    <h2>
+                        <asp:Image ImageUrl="~/Content/img/cycling_v.png" runat="server" />
+                        ESTAÇÕES A IMPLANTAR
+                    </h2>*@
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 text-center">
+
+                        <h3>LISTA DE CAÇAMBAS</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div id="nomesestacoesdiv"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            google.maps.event.addDomListener(window, 'load', initMap);
+            var map;
+            var marcadores = [];
+            var janelas = [];
+
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 14,
+                    //mapTypeId: 'roadmap',
+                    scrollwheel: true,
+                    disableDefaultUI: true,
+                    zoomControl: true,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    center: { lat: -20.3500813, lng: -40.3229756 }
+                });
+
+                setMarkers(map);
+            }
+            // Data for the markers consisting of a name, a LatLng and a zIndex for the
+            // order in which these markers should display on top of each other.
+            var localizacoes = [
+
+                ['01', -20.3316678, -40.2764223, 0, 'R. Gastão Roubach, 2-390 - Praia da Costa, Vila Velha - ES, 29101-012', 'Orla Curva da Sereia'],
+                ['02', -20.3376108, -40.28206, 1, 'Av. Antônio Gil Veloso, 1202-1302 - Praia da Costa, Vila Velha - ES, 29101-738', 'Orla Champagnat'],
+                ['03', -20.3431091, -40.2838808, 2, 'Av. Antônio Gil Veloso, 1692-1794 - Praia da Costa, Vila Velha - ES, 29101-738', 'Orla Maranhão'],
+                ['04', -20.3521915, -40.2837646, 3, 'Av. Antônio Gil Veloso, 3302-3312 - Praia da Costa, Vila Velha - ES, 29101-783', 'Orla Jair de Andrade'],
+                ['05', -20.3596904, -40.2939838, 4, 'Praia de Itaparica, Vila Velha - ES, 29102-032', 'Orla Bobs'],
+                ['06', -20.3660875, -40.2996594, 5, 'Av. Est. José Júlio de Souza - Praia de Itaparica, Vila Velha - ES, 29102-085', 'Orla Itaiabaia'],
+                ['07', -20.3746719, -40.3045678, 6, 'Av. Est. José Júlio de Souza - Praia de Itaparica, Vila Velha - ES, 29102-020', 'Orla Praça dos Ciclistas'],
+                ['08', -20.3842263, -40.3113699, 7, 'R. Dylio Penedo, 6 - Jockey de Itaparica, Vila Velha - ES, 29103-848', 'Embratel'],
+                ['09', -20.3297984, -40.2919507, 8, 'Praça Otávio Araújo - Prainha, Vila Velha - ES, 29100-310', 'Centro Prainha'],
+                ['10', -20.3364785, -40.2897406, 9, 'R. Helena Modenese - Centro de Vila Velha, Vila Velha - ES, 29100-240', 'Centro Mcdonalds'],
+                ['11', -20.3361913, -40.2933574, 10, 'Praça Duque de Caxias - Centro de Vila Velha, Vila Velha - ES, 29100-032', 'Praça Duque de Caxias'],
+                ['12', -20.3645989, -40.3031141, 11, 'Olaria, Vila Velha - ES, 29100-360', 'Centro Shopping da Terra'],
+                ['13', -20.3595999, -40.2985328, 12, 'R. Santa Cruz, 2-124 - Glória, Vila Velha - ES, 29122-310', 'Glória Santa Cruz'],
+                ['14', -20.3370745, -40.3081968, 13, 'Praca Meyerfreund, 243 - Glória, Vila Velha - ES, 29122-680', 'Praça da Garoto'],
+                ['15', -20.339333, -40.3062522, 14, 'Rua Santa Terezinha, 424 - Glória, Vila Velha - ES, 29122-041', 'Glória PA'],
+                ['16', -20.3595999, -40.2985328, 15, 'Av. Santa Leopoldina, 736-890 - Praia de Itaparica, Vila Velha - ES, 29102-041', 'Prefeitura'],
+                ['17', -20.3427544 - 40.2952989, 16, 'R. Cabo Aylson Simões, 1242 - Divino E Santo, Vila Velha - ES, 29100-320', 'Terminal de Vila Velha'],
+                ['18', -20.3645989, -40.3031141, 17, 'Av. Délio Silva Britto, 1400 - Coqueiral de Itaparica, Vila Velha - ES, 29102-345', 'Praça Coqueiral de Itaparica'],
+                ['19', -20.3461107, -40.2886891, 18, 'R. Santa Catarina, 464-498 - Itapuã, Vila Velha - ES, 29101-545', 'Praça Dom Cavatti'],
+                //['20', -20.3524843, -40.2957479, 19, 'Av. Luciano das Neves, 2294-2340 - Centro de Vila Velha, Vila Velha - ES, 29100-060', 'Shopping Vila Velha'],
+                //['21', -20.3437422, -40.313892, 20, '18 R. Emygdio Ferreira Sacramento, Vila Velha - ES, 29120-590', 'Estação Posto 7 - Aribiri'],
+                //['22', -20.3436533, -40.3170998, 22, 'Praça José Aragão, R. Emygdio Ferreira Sacramento - Aribiri, Vila Velha', 'Praça do Aribiri'],
+                //['23', -20.337250, -40.314584, 25, 'Av. Jerônimo Monteiro, 1918 - Cavalieri, Vila Velha - ES, 29121-355', 'Padaria e Auto Serviço Vitória'],
+                //['24', -20.3393407, -40.3206802, 26, 'Praça José Vereza - Aribiri, Vila Velha - ES, 29121-217', 'Praça José Vereza - Aribiri'],
+                //['25', -20.3407057, -40.3277098, 27, 'Av. Capuaba, 1450-1458 - Zumbi dos Palmares, Vila Velha - ES, 29119-140', 'Trevo de Capuaba'],
+                //['26', -20.3471806, -40.3189148, 28, 'Av. Carlos Lindenberg', 'Estação 26 - Contauto - Igreja Assembléia de Deus'],
+                //['27', -20.3470053, -40.3313326, 41, '2248 Av. Capuaba (Entrada de Santa Rita), Vila Velha - ES, 29118-775', 'Capuaba - Entrada S. Rita'],
+                //['28', -20.3552422, -40.3360008, 42, 'Rodovia Darly Santos, 230-262, Vila Velha - ES', 'Atacadão'],
+                //['29', -20.3458502, -40.3265352, 47, 'R. Emygdio Ferreira Sacramento, 1402-1444 - Ataíde, Vila Velha - ES, 29118-650', 'Ataíde - Acesso a Escola Ulisses Alvares '],
+                //['30', -20.3335914, -40.3357798, 48, '5314 Av. Jerônimo Monteiro - Centro, Vila Velha - ES', 'Jeronimo Monteiro - Entrada Ilha das Flores'],
+                //['31', -20.3282384, -40.3382843, 49, 'Av. Anézio José Simões, Vila Velha - ES', 'Pracinha De Paul'],
+                //['32', -20.3264723, -40.345048, 50, 'R. Vila Isabel, Vila Velha - ES - Paul, Vila Velha - ES', 'Museu da Vale'],
+                //['33', -20.3319198, -40.3527177, 51, 'Praça Getúlio Vargas - São Torquato, Vila Velha - ES, 29114-500', 'Praça São Torquato'],
+                //['34', -20.3462345, -40.3483722, 52, 'Av. Ernesto Canal, 433 - Alvorada, Vila Velha - ES', 'Alvorada - Colégio São Camilo'],
+                //['35', -20.3411748, -40.3390262, 61, '352 R. Três Irmãos, Vila Velha-ES', 'Praça de Vila Garrido'],
+                //['36', -20.3492802, -40.3393688, 62, 'Rua, Av. Fernando Antônio da Silveira, s/nº - Santa Rita, Vila Velha - ES, 29118-450, Vila Velha-ES', 'UNIDADE BÁSICA DE SAÚDE DE SANTA RITA'],
+                //['37', -20.3553561, -40.3565577, 53, 'Praça de Cobilândia, Vila Velha - ES, 29117-400', 'Praça de Cobilândia'],
+                //['38', -20.3750913, -40.3483786, 54, 'Praça Cristalina, 2 - Vale Encantado, 29113-200', 'Praça Cristalina - Vale Encantado'],
+                //['39', -20.3516507, -40.3457284, 55, 'Av. Carlos Lindember, Vila Velha-ES', 'Parque do Automóvel'],
+                //['40', -20.3510438, -40.3153887, 21, 'Praça Assis Chateaubriand - Ibes, Vila Velha - ES', 'Praça do Ibes'],
+                //['41', -20.349184, -40.3113677, 29, '655 Av. Rui Braga Ribeiro', 'Praça de Santa Inês'],
+                //['42', -20.3648225, -40.3092548, 34, '716 Av. João Mendes, Vila Velha - Espírito Santo', 'Rua do Comércio Praça de Santa Mônica'],
+                //['43', -20.3642208, -40.3133877, 35, 'Av. Junior Maragoni, Vila Velha, Espírito Santo,', 'Praça de Vila Nova'],
+                //['44', -20.3717485, -40.31823, 36, 'Av. Leila Diniz, 382-482 - Novo Mexico (Cruzamento Av. Leila Diniz e Sérgio Cardoso), Vila Velha - ES, 29104-070', 'Novo México'],
+                //['45', -20.3863359, -40.3263375, 38, 'Praça Aracas - Araçás, Vila Velha - ES, 29102-020', 'Praça de Araçás'],
+                //['46', -20.3574037, -40.3179809, 43, 'R. Gil Bernardes da Silveira, 66 - Santos Dumont, Vila Velha - ES, 29109-420', 'Praça Santos Dumont'],
+                //['47', -20.3694754, -40.3223891, 46, 'Av. Leila Diniz, 912 - Novo Mexico (Trevo Novo México), Vila Velha - ES, 29104-070', 'Jardim Asteca'],
+                //['48', -20.3518575, -40.308101, 23, 'Av. Min. Salgado Filho - Soteco, Vila Velha - ES, 29106-010', 'Praça da rotatória do Soteco'],
+                //['49', -20.3532239, -40.3014561, 30, 'R. José de Alencar - Boa Vista II, Vila Velha - ES, 29107-356', 'Boa Vista'],
+                //['50', -20.3481643, -40.294985, 31, '1795 Av. Jones dos Santos Neve - Centro de Vila Velha', 'Colégio UP'],
+                //['51', -20.3418556, -40.3044881, 32, '64 Av. América (Ao lado Colégio Conexão)- Cristóvão Colombo', 'Cristóvão Colombo'],
+                //['52', -20.359871, -40.3050939, 33, '55 R. dos Artistas, Vila Velha, Espírito Santo', 'Parque Urbano de Cocal'],
+                //['53', -20.3741986, -40.3114815, 37, 'R. Jorge Rizk, 268 - Pqe Res Gaivotas', 'Praça de Gaivotas'],
+                //['54', -20.3927241, -40.3165043, 39, 'Av. Jones dos Santos Neves - Rodovia do Sol,  Vila Velha - ES', 'Shopping Boulevard'],
+                //['55', -20.372983, -40.3074204, 44, '2616 Av. Santa Leopoldina - Praia de Itaparica, Vila Velha - ES, 29102-385', 'Escola Polivalente de Itaparica'],
+                //['56', -20.3247301, -40.2682128, 63, '1012 R. Santa Luzia, Vila Velha - ES, 29118-450, Vila Velha-ES', 'Farol de Santa Luzia'],
+                //['57', -20.4146447, -40.3375275, 56, '1136 Av. Dr. Dório Silva, Vila Velha-ES', 'Praça Santa Paula II'],
+                //['58', -20.4216361, -40.3290101, 40, 'Av. Jones dos Santos Neves - Barra do Jucu, Vila Velha - ES, 29125-100', 'Escola Tuffy Nader - Barra do Jucu'],
+                //['59', -20.4262802, -40.3222345, 63, '308 Av. Ana Penha Barcelos', 'Praia do Barrão'],
+                //['60', -20.4344643, -40.3319404, 63, '44 R. Itá - São Conrado, Vila Velha - ES, 29118-450, Vila Velha-ES', 'São Conrado - Escola Christiano Dias Lopes'],
+                //['61', -20.4302226, -40.3386236, 60, 'Av. Vitória - Riviera da Barra, Riviera da Barra, Vila Velha-ES', 'Centro Comunitário Riviera da Barra - Praça'],
+                //['62', -20.4377051, -40.3467276, 58, 'Av. Califórnia, 705 - Barramares, Vila Velha-ES', 'Barramares - Unidade de Saúde'],
+                //['63', -20.4463663, -40.3512265, 59, 'Terra Vermelha - Rua Avonso Claudio (Próximo Caixa Econômica Federal), Vila Velha-ES', 'Terra Vermelha'],
+                //['64', -20.4376441, -40.3596364, 63, '4149 Av. Brasil, Vila Velha - ES, Vila Velha-ES', 'Escola Paulo Sergio Borges'],
+                //['65', -20.4448572, -40.3564458, 57, 'Av. Líbano, 26 - Jabaeté, Vila Velha - ES, 29126-706, Vila Velha-ES', 'Associação de Moradores Parque Residencial de Jabaeté'],
+            ];
+
+            function setMarkers(map) {
+                // Adds markers to the map.
+                // Marker sizes are expressed as a Size of X,Y where the origin of the image
+                // (0,0) is located in the top left of the image.
+                // Origins, anchor positions and coordinates of the marker increase in the X
+                // direction to the right and in the Y direction down.
+                var image = {
+                    url: '/imagens/cacamba.png',
+                    // This marker is 20 pixels wide by 32 pixels high.
+                    size: new google.maps.Size(32, 32),
+                    // The origin for this image is (0, 0).
+                    origin: new google.maps.Point(0, 0),
+                    // The anchor for this image is the base of the flagpole at (0, 32).
+                    anchor: new google.maps.Point(0, 32)
+                };
+                var image2 = {
+                    url: '/imagens/cacamba.png',
+                    // This marker is 20 pixels wide by 32 pixels high.
+                    size: new google.maps.Size(32, 32),
+                    // The origin for this image is (0, 0).
+                    origin: new google.maps.Point(0, 0),
+                    // The anchor for this image is the base of the flagpole at (0, 32).
+                    anchor: new google.maps.Point(0, 32)
+                };
+
+                // Shapes define the clickable region of the icon. The type defines an HTML
+                // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+                // The final coordinate closes the poly by connecting to the first coordinate.
+                var shape = {
+                    coords: [1, 1, 1, 20, 18, 20, 18, 1],
+                    type: 'poly'
+                };
+
+                for (var i = 0; i < localizacoes.length; i++) {
+                    var localizacao = localizacoes[i];
+                    addMarker(localizacao, i);
+                }
+
+                function addMarker(pin, indice) {
+                    var marker = new google.maps.Marker({
+                        position: { lat: localizacao[1], lng: localizacao[2] },
+                        map: map,
+                        icon: ((localizacao[0] > 20) ? image : image2),
+                        //shape: shape,
+                        title: localizacao[0],
+                        zIndex: 0,
+                        animation: google.maps.Animation.DROP,
+                    });
+
+                    $('#nomesestacoesdiv').append('<p style="cursor: pointer" onclick="abrirInfo(' + indice + ')"><b>ESTAÇÃO ' + localizacao[0] + ' - ' + localizacao[5] + '</b> <br /> ' + localizacao[4] + '</p>');
+
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: 'ESTAÇÃO: <b>' + localizacao[0] + '</b> <br /> <b>' + localizacao[5] + '</b> <br /> ' + localizacao[4]
+                    });
+
+                    janelas.push(infoWindow);
+
+                    marker.addListener('click', function () {
+                        infoWindow.open(marker.get('map'), this);
+                    });
+
+                    marcadores.push(marker);
+                }
+
+                console.log(marcadores);
+            }
+            function isInfoWindowOpen(infoWindow) {
+                var map = infoWindow.getMap();
+                return (map !== null && typeof map !== "undefined");
+            }
+            function abrirInfo(indice) {
+                map.setCenter(marcadores[indice].getPosition());
+                janelas[indice].open(map, marcadores[indice]);
+            }
+        </script>
+    </div>
+
+
+@*<p id="demo">Clique no botão para obter sua localização:</p>
+<button onclick="getLocation()">Clique aqui</button>
+<div id="mapholder"></div>
+
+*@
+
+
+
+@section Scripts 
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+   
+
+
+
+
+ @*   <script>
+var x=document.getElementById("demo");
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition,showError);
+    }
+  else{x.innerHTML="Geolocation is not supported by this browser.";}
+  }
+ 
+function showPosition(position)
+  {
+  var latlon=position.coords.latitude+","+position.coords.longitude;
+ 
+  var img_url="https://maps.googleapis.com/maps/api/staticmap?center="
+  +latlon+"&zoom=14&size=400x300&sensor=false";
+  document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
+  }
+ 
+function showError(error)
+  {
+  switch(error.code)
+    {
+    case error.PERMISSION_DENIED:
+      x.innerHTML="Usuário rejeitou a solicitação de Geolocalização."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML="Localização indisponível."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML="O tempo da requisição expirou."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML="Algum erro desconhecido aconteceu."
+      break;
+    }
+  }
+</script>
+*@
+
+
+
+
+    @*<script>
+        if('geolocation' in navigator)
+        {
+            //navigator.geolocation.getCurrentPosition
+            //(
+            //    function(position)
+            //    {
+            //        console.log(position)
+            //    }, function(error)
+            //    {
+            //        console.log(error)
+            //    }
+            //)
+
+            const watcher = navigator.geolocation.watchPosition
+            (
+                function(position)
+                {
+                    console.log(position)
+                },
+                function(error)
+                {
+                    console.log(error)
+                }, 
+                {enableHighAccuracy:true, maximumAge:30000, timeout:30000}
+            )
+            navigator.geolocation.clearWatch(watcher)
+        }
+        else
+        {
+            alert('ops, não foi possível pegar alocalização')
+        }
+    </script>*@
+
+}

@@ -1,0 +1,521 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\cacambaonline.bundle.scp.css",
+      "PackagePath": "staticwebassets\\cacambaonline.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\Backup\\GerarArquivo.txt",
+      "PackagePath": "staticwebassets\\Backup\\GerarArquivo.txt"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\Backup\\Relatorio_base dando erro.txt",
+      "PackagePath": "staticwebassets\\Backup\\Relatorio_base dando erro.txt"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\Manual do Sistema - Caçamba Online.docx",
+      "PackagePath": "staticwebassets\\arquivos\\Manual do Sistema - Caçamba Online.docx"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\1\\Teste 3 - NomeFantasiad2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\1\\Teste 3 - NomeFantasiad2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_articuladores.png",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_articuladores.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_calendario_2021.jpg",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_calendario_2021.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\2\\d55df27c-f480-41aa-a591-76130a64c20e_articuladores.png",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\2\\d55df27c-f480-41aa-a591-76130a64c20e_articuladores.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\2\\d55df27c-f480-41aa-a591-76130a64c20e_calendario_2021.jpg",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\2\\d55df27c-f480-41aa-a591-76130a64c20e_calendario_2021.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\3\\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_SEMTI.jpg",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\3\\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_SEMTI.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\3\\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_sabor-da-barra.jpg",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\3\\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_sabor-da-barra.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\4\\0f29cd63-b435-4c1a-903c-9497dacd1216_articuladores.png",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\4\\0f29cd63-b435-4c1a-903c-9497dacd1216_articuladores.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\4\\0f29cd63-b435-4c1a-903c-9497dacd1216_foto_perfil.jpg",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\4\\0f29cd63-b435-4c1a-903c-9497dacd1216_foto_perfil.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\4\\270dac1a-8ff4-4b66-a7c2-9a238c34bd89_Notificacao.pdf",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\4\\270dac1a-8ff4-4b66-a7c2-9a238c34bd89_Notificacao.pdf"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\5\\409d962a-87ec-4398-a341-1a223828dc77_articuladores.png",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\5\\409d962a-87ec-4398-a341-1a223828dc77_articuladores.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\5\\409d962a-87ec-4398-a341-1a223828dc77_calendario_2021.jpg",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\5\\409d962a-87ec-4398-a341-1a223828dc77_calendario_2021.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\5\\Notificacao.pdf",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\5\\Notificacao.pdf"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\6\\bf622d36-6065-4d7f-a710-303109f321da_SEMTI.jpg",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\6\\bf622d36-6065-4d7f-a710-303109f321da_SEMTI.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\6\\bf622d36-6065-4d7f-a710-303109f321da_sabor-da-barra.jpg",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\6\\bf622d36-6065-4d7f-a710-303109f321da_sabor-da-barra.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_Notificacao.pdf",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_Notificacao.pdf"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_articuladores.png",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_articuladores.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_calendario_2021.jpg",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_calendario_2021.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_Notificacao.pdf",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_Notificacao.pdf"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_notebook.jpg",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_notebook.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_sabor-da-barra.jpg",
+      "PackagePath": "staticwebassets\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_sabor-da-barra.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\cacambaroxa.png",
+      "PackagePath": "staticwebassets\\cacambaroxa.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\CAÇAMBAAZUL.webp",
+      "PackagePath": "staticwebassets\\imagens\\CAÇAMBAAZUL.webp"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\LOGO_PMVV_2021.png",
+      "PackagePath": "staticwebassets\\imagens\\LOGO_PMVV_2021.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\LOGO_PMVV_2021_2.png",
+      "PackagePath": "staticwebassets\\imagens\\LOGO_PMVV_2021_2.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\Untitled-1.psd",
+      "PackagePath": "staticwebassets\\imagens\\Untitled-1.psd"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacamba.png",
+      "PackagePath": "staticwebassets\\imagens\\cacamba.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambadocumento.png",
+      "PackagePath": "staticwebassets\\imagens\\cacambadocumento.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambalaranja.png",
+      "PackagePath": "staticwebassets\\imagens\\cacambalaranja.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambapreta.png",
+      "PackagePath": "staticwebassets\\imagens\\cacambapreta.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambaroxa.png",
+      "PackagePath": "staticwebassets\\imagens\\cacambaroxa.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambaverde.png",
+      "PackagePath": "staticwebassets\\imagens\\cacambaverde.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambavermelha.png",
+      "PackagePath": "staticwebassets\\imagens\\cacambavermelha.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\casa_real.png",
+      "PackagePath": "staticwebassets\\imagens\\casa_real.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\caçamba.jpg",
+      "PackagePath": "staticwebassets\\imagens\\caçamba.jpg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cycling.png",
+      "PackagePath": "staticwebassets\\imagens\\cycling.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cycling_v.png",
+      "PackagePath": "staticwebassets\\imagens\\cycling_v.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cyclingnovas.png",
+      "PackagePath": "staticwebassets\\imagens\\cyclingnovas.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cyclingnovas_.png",
+      "PackagePath": "staticwebassets\\imagens\\cyclingnovas_.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cyclingnovas__.png",
+      "PackagePath": "staticwebassets\\imagens\\cyclingnovas__.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\home-ge8defad0b_640.png",
+      "PackagePath": "staticwebassets\\imagens\\home-ge8defad0b_640.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\logo.png",
+      "PackagePath": "staticwebassets\\imagens\\logo.png"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.cacambaonline.props",
+      "PackagePath": "build\\cacambaonline.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.cacambaonline.props",
+      "PackagePath": "buildMultiTargeting\\cacambaonline.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.cacambaonline.props",
+      "PackagePath": "buildTransitive\\cacambaonline.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.cacambaonline.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

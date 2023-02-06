@@ -1,0 +1,48 @@
+﻿@model IEnumerable<cacambaonline.Models.UsuarioDestinatario>
+
+@{
+    ViewData["Title"] = "Lista de Usuario/Destinatário";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Associar Usuário a Destinatário</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Usuário
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destinatarios)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @foreach (var user in ViewBag.QueryUser)
+                    {
+                        @if (user.Value == item.UserId)
+                        {
+                            <div>@user.Text</div>
+                        }
+
+                    }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destinatarios.Id)
+            </td>
+                <td class="text-right">
+                            <a class="btn btn-warning" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search"></spam> </a>
+                            <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam> </a>
+                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam> </a>
+                        </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,45 @@
+﻿@model RolesViewModel
+
+@{
+
+    ViewData["Title"] = "Perfil do Usuario";
+}
+
+<h2>@ViewData["Title"]</h2>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="GerenciarEditarConfirm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label">Id</label>
+                <input class="form-control" readonly value="@Model.Usuario.Id" id="id" name="id" />
+                <label class="control-label">E-mail</label>
+                <input class="form-control" readonly value="@Model.Usuario.Email" id="email" name="email" />
+                <label class="control-label">Perfil do usuário: </label>
+                <input class="form-control" readonly value="@Model.Role" id="role" name="role" />
+
+                <label class="control-label" style="color:red; font-weight:bold">Selecione novo Perfil: </label><br />
+
+                <select required id="perfil" class="form-control" name="perfil">
+                    <option value="" selected></option>
+                    @foreach (var role in Model.Roles)
+                    {
+                       
+                        <option value="@role">@role</option>
+                    }
+                </select>
+                <br />
+            </div>
+            @*<div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+*@
+             <div class="form-group">
+                <input type="submit" value="Alterar" class="btn btn-primary" /> | <a asp-action="Gerenciar" class="btn btn-secondary">Voltar</a>
+             </div>
+
+           
+        </form>
+    </div>
+</div>
+

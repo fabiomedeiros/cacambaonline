@@ -1,0 +1,36 @@
+﻿@model cacambaonline.Models.UsuarioDestinatario
+
+@{
+    ViewData["Title"] = "Associar Usuário a Destinatário";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label">Usuário</label>
+                <select asp-for="UserId" class="form-control" asp-items="ViewBag.UsuariosId"></select>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DestinatariosId" class="control-label">Destinatário</label>
+                <select asp-for="DestinatariosId" class ="form-control" asp-items="ViewBag.DestinatariosId"></select>
+            </div>
+             <p></p>
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" /> | <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

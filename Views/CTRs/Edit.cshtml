@@ -1,0 +1,374 @@
+﻿@model cacambaonline.Models.CTR
+
+@{
+    ViewData["Title"] = "Editar CTR";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+
+<p></p>
+<h3 class="text-danger">@ViewData["alerta"]</h3>
+<p></p>
+
+<div class="card" id="passo1">
+    <div class="card-header">
+        Passo 1 - Localização de abertura da CTR
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+
+                    <br />
+                    <label class="control-label" style="font-weight: bold;"> Se desejar pesquise por cep para preencher os campos seguintes:</label>  <input id="cepx" type="text" class="form-control" />
+                    <p>&nbsp;</p>
+
+                    <label class="control-label">Logradouro:</label>  <input id="logradouro" name="logradouro" type="text" class="form-control" />
+                    <label class="control-label">Número:</label>  <input id="numero" name="numero" type="text" class="form-control" />
+                    <label class="control-label">Bairro:</label> <input id="bairro" name="bairro" type="text" class="form-control" />
+                    <label class="control-label">Cidade:</label> <input id="ciadde" name="ciadde" type="text" class="form-control" />
+                    @*<label class="control-label">Cep:</label> <input id="cep" type="text" disabled class="form-control" />*@
+                    <br />
+                    <input id="marcar" type="button" value="Buscar Localização" class="btn btn-primary" onclick="chamaMarcacaoEndereco(logradouro.value,numero.value,bairro.value, ciadde.value)" />
+                    <button type="button" class="btn btn-success" onclick="Mudarestado('passo1','passo2')">Próximo Passo</button>
+                </div>
+            </div>
+            <div class="col-md-8">
+
+                <h4>Se quiser, encontre sua Localização pelo mapa (mova a marcação) </h4>
+                <div id="map_canvas" style="width: 95%; height: 432px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card" id="passo2">
+<div class="card-header">
+    Passo 2 - Confira o Endereço e Complete o Cadastro
+</div>
+<div class="card-body">
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Localizacao" class="control-label"></label>
+                <input asp-for="Localizacao" class="form-control" />
+                <span asp-validation-for="Localizacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Latitude" class="control-label"></label>
+                <input asp-for="Latitude" class="form-control" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Longitude" class="control-label"></label>
+                <input asp-for="Longitude" class="form-control" />
+                <span asp-validation-for="Longitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Data" class="control-label"></label>
+                <input asp-for="Data" readonly class="form-control" />
+                <span asp-validation-for="Data" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransportadoresId" class="control-label"></label>
+                <select asp-for="TransportadoresId"  class="form-control" asp-items="ViewBag.TransportadoresId"></select>
+                <span asp-validation-for="TransportadoresId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CacambasId" class="control-label"></label>
+                <select asp-for="CacambasId"  class="form-control" asp-items="ViewBag.CacambasId"></select>
+                <span asp-validation-for="CacambasId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DestinatariosId" class="control-label"></label>
+                <select asp-for="DestinatariosId"  class="form-control" asp-items="ViewBag.DestinatariosId"></select>
+                <span asp-validation-for="DestinatariosId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Alterar" class="btn btn-primary" /> | <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script type="text/javascript" language="javascript">
+
+        $(document).ready(function () {
+            //Dropdown dinâmico.
+            $("#TransportadoresId").change(function () {
+                var id = $(this).val();
+                $.ajax({
+                    url: '/CTRs/GetCacamba',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: { id: id },
+                    success: function (data) {
+                        var options = '';
+                        $.each(data, function () {
+                            options += '<option value="' + this.value + '">' +
+                                this.text + '</option>';
+                        });
+                        $("#CacambasId").prop('disabled', false).html(options);
+                    }
+                });
+            });
+
+        });
+
+        //Configuração iniciais do mapa
+        //variavel cria para que seja criado o mapa Google Maps
+        var map = null;
+
+        //aqui vamos definir as coordenadas de latitude e longitude no qual sera exibido o nosso mapa
+        var latlng = new google.maps.LatLng(-23.64340873969638, -46.730219057147224);
+        //DEFINE A LOCALIZAÇÃO EXATA DO MAPA
+        //aqui vamos configurar o mapa, como o zoom, o centro do mapa, etc
+        var myOptions = {
+            zoom: 15,//utilizaremos o zoom 15
+            center: latlng,//aqui a nossa variavel constando latitude e
+            //longitude ja declarada acima
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        //criando o mapa dentro da div com o id="map_canvas" que ja criamos
+        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+        //DEFINE AS COORDENADAS do ponto exato - CENTRALIZAÇÃO DO MAPA
+        map.setCenter(new google.maps.LatLng(-20.3500813, -40.3229756));
+        //Fim
+
+
+        //Fução Posição atual
+
+        //Variáveis de configuração
+        const options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+        function error(err) {
+            console.warn(`ERROR(${err.code}): ${err.message}`);
+        }
+        //Função que pega a posição atual
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(success, error, options);
+        }
+        else {
+            x.innerHTML = "O seu navegador não suporta Geolocalização. É necessário atualizá-lo";
+        }
+
+        //Fim
+
+        //Fução Posição atual
+        function success(pos) {
+            const crd = pos.coords;
+            document.getElementById("Latitude").value = crd.latitude;
+            document.getElementById("Longitude").value = crd.longitude;
+
+            latlng = new google.maps.LatLng(crd.latitude, crd.longitude);
+            var myOptions = {
+                zoom: 15,//utilizaremos o zoom 15
+                center: latlng,//aqui a nossa variavel constando latitude e
+                //longitude ja declarada acima
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            //criando o mapa dentro da div com o id="map_canvas" que ja criamos
+            map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+            //DEFINE AS COORDENADAS do ponto exato - CENTRALIZAÇÃO DO MAPA
+            map.setCenter(new google.maps.LatLng(crd.latitude, crd.longitude));
+
+            //Parte ao qual deixa marcar no mapa
+            var marker = new google.maps.Marker
+                ({
+                    position: {
+                        lat: crd.latitude,
+                        lng: crd.longitude
+                    },
+                    map: map,
+                    draggable: true
+
+                })
+
+            //Função que faz a localização pelo pontos latitude e longitude
+            getEndereco(crd.latitude, crd.longitude);
+
+            //Quando mover o ponto no mapa, esta funçao tem como objetivo renovar os inputs de latitude e longitude ao mesmo tempo busca o endereço através do ponto marcado no mapa.
+            google.maps.event.addListener
+                (
+                    marker, 'dragend',
+                    function () {
+                        var lat = marker.getPosition().lat();
+                        var lng = marker.getPosition().lng();
+                        document.getElementById("Latitude").value = lat;
+                        document.getElementById("Longitude").value = lng;
+                        getEndereco(lat, lng);
+                    }
+                )
+
+            //Quando clicado o ponto no mapa, esta funçao tem como objetivo renovar os inputs de latitude e longitude ao mesmo tempo busca o endereço através do ponto marcado no mapa.
+            google.maps.event.addListener
+                (
+                    marker, 'click',
+                    function () {
+                        var lat = marker.getPosition().lat();
+                        var lng = marker.getPosition().lng();
+                        document.getElementById("Latitude").value = lat;
+                        document.getElementById("Longitude").value = lng;
+                        getEndereco(lat, lng);
+                    }
+                )
+
+        }
+        //Fim
+
+        //Função captura posição pelo endereço
+        function chamaMarcacaoEndereco(logradoro, numero, bairro, cidade) {
+            //colocando o endereco no padrao correto
+            var endereco = logradoro + ", " + numero + ", " + bairro + " - " + cidade;
+            //MUDANDO O ZOOM DO MAPA
+            map.setZoom(17);
+            //Buscando lat e log por endereco (no formato: nome rua, numero, bairro - cidade)
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode({ 'address': endereco }, function (results, status) {
+                //se o retorno de status for ok
+                if (status = google.maps.GeocoderStatus.OK) {
+
+                    //variavel cria para que seja criado o mapa Google Maps
+                    map = null;
+                    //Essa e a funcao que criara o mapa GoogleMaps
+
+                    //function chamaMapa() {
+                    //aqui vamos definir as coordenadas de latitude e longitude no qual
+                    //sera exibido o nosso mapa
+                    latlng = new google.maps.LatLng(latsubstring, longsubstring);
+                    //DEFINE A LOCALIZAÇÃO EXATA DO MAPA
+                    //aqui vamos configurar o mapa, como o zoom, o centro do mapa, etc
+                    myOptions = {
+                        zoom: 15,//utilizaremos o zoom 15
+                        center: latlng,//aqui a nossa variavel constando latitude e
+                        //longitude ja declarada acima
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    //criando o mapa dentro da div com o id="map_canvas" que ja criamos
+                    map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                    //DEFINE AS COORDENADAS do ponto exato - CENTRALIZAÇÃO DO MAPA
+                    map.setCenter(new google.maps.LatLng(latsubstring, longsubstring));
+
+
+                    //pega o retorno de result, que sao a latitude e longitude
+                    var latlng = results[0].geometry.location;
+                    //faz marcacao no mapa
+                    var marker = new google.maps.Marker({ position: latlng, map: map, draggable: true });
+
+                    map.setCenter(latlng);//leva o mapa para a posicao da marcacao
+
+
+                    google.maps.event.addListener(marker, 'dragend', function () {
+                        var lat = marker.getPosition().lat();
+                        var lng = marker.getPosition().lng();
+
+                        document.getElementById("Latitude").value = lat;
+                        document.getElementById("Longitude").value = lng;
+                        document.getElementById("Localizacao").value = results[0].formatted_address;
+
+                        getEndereco(lat, lng);
+                    })
+
+                    google.maps.event.addListener(marker, 'click', function () {
+                        var lat = marker.getPosition().lat();
+                        var lng = marker.getPosition().lng();
+
+                        document.getElementById("Latitude").value = lat;
+                        document.getElementById("Longitude").value = lng;
+                        document.getElementById("Localizacao").value = results[0].formatted_address;
+                        getEndereco(lat, lng);
+                    })
+
+                    var posprimeravirgula = latlng.toString().indexOf(",");
+
+                    var latsubstring = latlng.toString().substring(1, posprimeravirgula)
+                    var longsubstring = latlng.toString().substring(posprimeravirgula + 2, latlng.toString().length - 1)
+
+                    document.getElementById("Latitude").value = latsubstring;
+                    document.getElementById("Longitude").value = longsubstring;
+                    document.getElementById("Localizacao").value = results[0].formatted_address;
+
+                }
+            });
+        }
+        //Fim
+
+        //Função localiza função peloa Latitude e Longitude
+        function getEndereco(lat, long) {
+            try {
+                let geocoder = new google.maps.Geocoder;
+                let LatLng = new google.maps.LatLng(lat, long)
+                geocoder.geocode({ 'location': LatLng }, function (results, status) {
+                    let endereco = "Tente Novamente"
+                    if (status === 'OK') {
+                        if (results[1]) {
+                            document.getElementById("Localizacao").value = results[0].formatted_address;
+
+                            //Dividindo a string
+                            var posprimeravirgula = results[0].formatted_address.indexOf(",");
+                            var possegundavirgula = results[0].formatted_address.indexOf(",", posprimeravirgula + 1);
+                            var posterceiravirgula = results[0].formatted_address.indexOf(",", possegundavirgula + 1);
+                            var posquartavirgula = results[0].formatted_address.indexOf(",", posterceiravirgula + 1);
+                            var posprimeratraco = results[0].formatted_address.indexOf("-");
+
+                            var ruasubstring = results[0].formatted_address.substring(0, posprimeravirgula)
+                            var numerosubstring = results[0].formatted_address.substring(posprimeravirgula + 2, posprimeratraco - 1)
+                            var bairrosubstring = results[0].formatted_address.substring(posprimeratraco + 2, possegundavirgula)
+                            var cidadesubstring = results[0].formatted_address.substring(possegundavirgula + 2, posterceiravirgula)
+                            var cepsubstring = results[0].formatted_address.substring(posterceiravirgula + 2, posquartavirgula)
+
+                            logradouro.value = ruasubstring
+                            numero.value = numerosubstring
+                            bairro.value = bairrosubstring
+                            ciadde.value = cidadesubstring
+                            cep.value = cepsubstring
+
+                            console.log("OK: " + endereco + " - Lat: " + lat + " - Lng: " + long);
+                        }
+                    }
+                    else if (status == 'ZERO_RESULTS') {
+                        clearTimeout(function () {
+                            getEndereco1(lat, long, callback)
+                        })
+                    }
+                    else {
+                        setTimeout(function () {
+                            getEndereco1(lat, long, callback)
+                        }, 3000)
+                        console.log("status: " + status);
+                    }
+                    callback(endereco);
+                });
+            }
+            catch (err) {
+                console.log("Erro na Função 'getEndereco' mensagem do erro: " + err.message);
+            }
+        }
+        //Fim
+    </script>
+
+
+    @*Busca feita pelo Via CEP*@
+    <script>
+        BuscaCepCtrs();
+    </script>
+    @*Fim*@
+}
