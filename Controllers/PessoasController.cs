@@ -54,7 +54,7 @@ namespace cacambaonline.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,AspNetUsersId,Nome,Cpf")] Pessoas pessoas)
+        public async Task<IActionResult> Create(Pessoas pessoas)
         {
             if (ModelState.IsValid)
             {

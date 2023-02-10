@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace cacambaonline.Models
 {
@@ -39,6 +40,9 @@ namespace cacambaonline.Models
 
         //Quando não há CTR. Essa notificação vai virar CTR, porém com este campo preenchido na controller Notificacao/Create. Isso para solucionar o problema do mapa que era 2 cores, agora são 4.
         public string? VeiodaNotificacao { get; set; }
+
+        [NotMapped]
+        public string? Motivo_Exclusao { get; set; }
 
 
         //Avulso

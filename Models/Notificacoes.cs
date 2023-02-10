@@ -58,6 +58,13 @@ namespace cacambaonline.Models
 
         public string? Arquivo { get; set; }
 
+        public int? NumeroCamcamba { get; set; } // em caso de não haver cadastro de caçamba, para dar certo a validação na criação, pois não pode haver duplicidade de infração.
+
+        public bool? Ativa { get; set; }
+
+        [NotMapped]
+        public string? Motivo_Exclusao { get; set; }
+
 
         #endregion
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LHWlPFJ3EUuMomv1DFIeIFlkN4dFBtoYaMcncRoIB2I=",
+  "Hash": "UykyHxp+Y/5ba2kluF08+FJusWjklA9g3j2W1H9Vt/s=",
   "Source": "cacambaonline",
   "BasePath": "_content/cacambaonline",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "cacambaonline\\wwwroot",
       "Source": "cacambaonline",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "Pattern": "**"
     }
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "C:\\Users\\fabio.medeiros\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.10\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\bundle\\cacambaonline.styles.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\bundle\\cacambaonline.styles.css",
       "SourceId": "cacambaonline",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "cacambaonline.styles.css",
       "AssetKind": "All",
@@ -1051,13 +1051,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\bundle\\cacambaonline.styles.css"
+      "OriginalItemSpec": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\bundle\\cacambaonline.styles.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\cacambaonline.bundle.scp.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\cacambaonline.bundle.scp.css",
       "SourceId": "cacambaonline",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "cacambaonline.bundle.scp.css",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\cacambaonline.bundle.scp.css"
+      "OriginalItemSpec": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\cacambaonline.bundle.scp.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\Manual do Sistema - Caçamba Online.docx",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\arquivos\\Manual do Sistema - Caçamba Online.docx",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "arquivos/Manual do Sistema - Caçamba Online.docx",
       "AssetKind": "All",
@@ -1088,12 +1088,12 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\Manual do Sistema - Caçamba Online.docx"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_articuladores.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\2\\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_articuladores.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/1/d2eb5818-f0fa-475f-a090-3aa6380f72d5_articuladores.png",
+      "RelativePath": "arquivos/notificacoes/2/f904719e-b181-4b7e-849a-3bb9a1a2dc4d_articuladores.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1102,15 +1102,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_articuladores.png"
+      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\2\\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_articuladores.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_calendario_2021.jpg",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\2\\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_image.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/1/d2eb5818-f0fa-475f-a090-3aa6380f72d5_calendario_2021.jpg",
+      "RelativePath": "arquivos/notificacoes/2/f904719e-b181-4b7e-849a-3bb9a1a2dc4d_image.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1119,15 +1119,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_calendario_2021.jpg"
+      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\2\\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_image.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\2\\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_Notificacao.pdf",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/1/d2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf",
+      "RelativePath": "arquivos/notificacoes/2/f904719e-b181-4b7e-849a-3bb9a1a2dc4d_Notificacao.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1136,336 +1136,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\1\\d2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf"
+      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\2\\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_Notificacao.pdf"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\1\\Teste 3 - NomeFantasiad2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\Backup\\GerarArquivo.txt",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/1/Teste 3 - NomeFantasiad2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\1\\Teste 3 - NomeFantasiad2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\2\\d55df27c-f480-41aa-a591-76130a64c20e_articuladores.png",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/2/d55df27c-f480-41aa-a591-76130a64c20e_articuladores.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\2\\d55df27c-f480-41aa-a591-76130a64c20e_articuladores.png"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\2\\d55df27c-f480-41aa-a591-76130a64c20e_calendario_2021.jpg",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/2/d55df27c-f480-41aa-a591-76130a64c20e_calendario_2021.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\2\\d55df27c-f480-41aa-a591-76130a64c20e_calendario_2021.jpg"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\3\\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_sabor-da-barra.jpg",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/3/f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_sabor-da-barra.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\3\\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_sabor-da-barra.jpg"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\3\\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_SEMTI.jpg",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/3/f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_SEMTI.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\3\\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_SEMTI.jpg"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\4\\0f29cd63-b435-4c1a-903c-9497dacd1216_articuladores.png",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/4/0f29cd63-b435-4c1a-903c-9497dacd1216_articuladores.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\4\\0f29cd63-b435-4c1a-903c-9497dacd1216_articuladores.png"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\4\\0f29cd63-b435-4c1a-903c-9497dacd1216_foto_perfil.jpg",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/4/0f29cd63-b435-4c1a-903c-9497dacd1216_foto_perfil.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\4\\0f29cd63-b435-4c1a-903c-9497dacd1216_foto_perfil.jpg"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\4\\270dac1a-8ff4-4b66-a7c2-9a238c34bd89_Notificacao.pdf",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/4/270dac1a-8ff4-4b66-a7c2-9a238c34bd89_Notificacao.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\4\\270dac1a-8ff4-4b66-a7c2-9a238c34bd89_Notificacao.pdf"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\5\\409d962a-87ec-4398-a341-1a223828dc77_articuladores.png",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/5/409d962a-87ec-4398-a341-1a223828dc77_articuladores.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\5\\409d962a-87ec-4398-a341-1a223828dc77_articuladores.png"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\5\\409d962a-87ec-4398-a341-1a223828dc77_calendario_2021.jpg",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/5/409d962a-87ec-4398-a341-1a223828dc77_calendario_2021.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\5\\409d962a-87ec-4398-a341-1a223828dc77_calendario_2021.jpg"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\5\\Notificacao.pdf",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/5/Notificacao.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\5\\Notificacao.pdf"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\6\\bf622d36-6065-4d7f-a710-303109f321da_sabor-da-barra.jpg",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/6/bf622d36-6065-4d7f-a710-303109f321da_sabor-da-barra.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\6\\bf622d36-6065-4d7f-a710-303109f321da_sabor-da-barra.jpg"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\6\\bf622d36-6065-4d7f-a710-303109f321da_SEMTI.jpg",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/6/bf622d36-6065-4d7f-a710-303109f321da_SEMTI.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\6\\bf622d36-6065-4d7f-a710-303109f321da_SEMTI.jpg"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_articuladores.png",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/7/a4ac286d-5c7b-4251-af29-f9846f8fee72_articuladores.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_articuladores.png"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_calendario_2021.jpg",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/7/a4ac286d-5c7b-4251-af29-f9846f8fee72_calendario_2021.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_calendario_2021.jpg"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_Notificacao.pdf",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/7/a4ac286d-5c7b-4251-af29-f9846f8fee72_Notificacao.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\7\\a4ac286d-5c7b-4251-af29-f9846f8fee72_Notificacao.pdf"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_notebook.jpg",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/8/7b7062f3-28eb-4789-9b41-e336d54a0c19_notebook.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_notebook.jpg"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_Notificacao.pdf",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/8/7b7062f3-28eb-4789-9b41-e336d54a0c19_Notificacao.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_Notificacao.pdf"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_sabor-da-barra.jpg",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
-      "BasePath": "_content/cacambaonline",
-      "RelativePath": "arquivos/notificacoes/8/7b7062f3-28eb-4789-9b41-e336d54a0c19_sabor-da-barra.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\arquivos\\notificacoes\\8\\7b7062f3-28eb-4789-9b41-e336d54a0c19_sabor-da-barra.jpg"
-    },
-    {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\Backup\\GerarArquivo.txt",
-      "SourceId": "cacambaonline",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "Backup/GerarArquivo.txt",
       "AssetKind": "All",
@@ -1479,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\GerarArquivo.txt"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\Backup\\Relatorio_base dando erro.txt",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\Backup\\Relatorio_base dando erro.txt",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "Backup/Relatorio_base dando erro.txt",
       "AssetKind": "All",
@@ -1496,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Relatorio_base dando erro.txt"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\cacambaroxa.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\cacambaroxa.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "cacambaroxa.png",
       "AssetKind": "All",
@@ -1513,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\cacambaroxa.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\css\\site.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\css\\site.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1530,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\css\\style.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\css\\style.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -1547,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\favicon.ico",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\favicon.ico",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1564,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\caçamba.jpg",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\caçamba.jpg",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/caçamba.jpg",
       "AssetKind": "All",
@@ -1581,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\caçamba.jpg"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacamba.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cacamba.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cacamba.png",
       "AssetKind": "All",
@@ -1598,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cacamba.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\CAÇAMBAAZUL.webp",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\CAÇAMBAAZUL.webp",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/CAÇAMBAAZUL.webp",
       "AssetKind": "All",
@@ -1615,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\CAÇAMBAAZUL.webp"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambadocumento.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cacambadocumento.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cacambadocumento.png",
       "AssetKind": "All",
@@ -1632,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cacambadocumento.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambalaranja.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cacambalaranja.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cacambalaranja.png",
       "AssetKind": "All",
@@ -1649,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cacambalaranja.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambapreta.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cacambapreta.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cacambapreta.png",
       "AssetKind": "All",
@@ -1666,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cacambapreta.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambaroxa.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cacambaroxa.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cacambaroxa.png",
       "AssetKind": "All",
@@ -1683,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cacambaroxa.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambaverde.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cacambaverde.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cacambaverde.png",
       "AssetKind": "All",
@@ -1700,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cacambaverde.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cacambavermelha.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cacambavermelha.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cacambavermelha.png",
       "AssetKind": "All",
@@ -1717,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cacambavermelha.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\casa_real.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\casa_real.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/casa_real.png",
       "AssetKind": "All",
@@ -1734,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\casa_real.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cycling.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cycling.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cycling.png",
       "AssetKind": "All",
@@ -1751,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cycling.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cycling_v.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cycling_v.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cycling_v.png",
       "AssetKind": "All",
@@ -1768,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cycling_v.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cyclingnovas.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cyclingnovas.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cyclingnovas.png",
       "AssetKind": "All",
@@ -1785,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cyclingnovas.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cyclingnovas_.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cyclingnovas_.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cyclingnovas_.png",
       "AssetKind": "All",
@@ -1802,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cyclingnovas_.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\cyclingnovas__.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\cyclingnovas__.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/cyclingnovas__.png",
       "AssetKind": "All",
@@ -1819,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\cyclingnovas__.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\home-ge8defad0b_640.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\home-ge8defad0b_640.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/home-ge8defad0b_640.png",
       "AssetKind": "All",
@@ -1836,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\home-ge8defad0b_640.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\logo.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\logo.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/logo.png",
       "AssetKind": "All",
@@ -1853,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\logo.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\LOGO_PMVV_2021.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\LOGO_PMVV_2021.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/LOGO_PMVV_2021.png",
       "AssetKind": "All",
@@ -1870,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\LOGO_PMVV_2021.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\LOGO_PMVV_2021_2.png",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\LOGO_PMVV_2021_2.png",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/LOGO_PMVV_2021_2.png",
       "AssetKind": "All",
@@ -1887,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\LOGO_PMVV_2021_2.png"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\imagens\\Untitled-1.psd",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\imagens\\Untitled-1.psd",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "imagens/Untitled-1.psd",
       "AssetKind": "All",
@@ -1904,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\imagens\\Untitled-1.psd"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\js\\main.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\js\\main.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -1921,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\js\\site.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\js\\site.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1938,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1955,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1972,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1989,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2006,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2023,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2040,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2057,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2074,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2091,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2108,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2125,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2142,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2159,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2176,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2193,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2210,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2227,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2244,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2261,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2278,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2295,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2312,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2329,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2346,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2363,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2380,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2397,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2414,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2431,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2448,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2465,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2482,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2499,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2516,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2533,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2550,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2567,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2584,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2601,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2618,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2635,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2652,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2669,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2686,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2703,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/css/all.min.css",
       "AssetKind": "All",
@@ -2720,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\all.min.css"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.eot",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.eot",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-brands-400.eot",
       "AssetKind": "All",
@@ -2737,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.eot"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.svg",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.svg",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-brands-400.svg",
       "AssetKind": "All",
@@ -2754,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.svg"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -2771,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-brands-400.woff",
       "AssetKind": "All",
@@ -2788,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -2805,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.eot",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.eot",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-regular-400.eot",
       "AssetKind": "All",
@@ -2822,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.eot"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.svg",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.svg",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-regular-400.svg",
       "AssetKind": "All",
@@ -2839,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.svg"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -2856,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-regular-400.woff",
       "AssetKind": "All",
@@ -2873,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -2890,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.eot",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.eot",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-solid-900.eot",
       "AssetKind": "All",
@@ -2907,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.eot"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.svg",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.svg",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-solid-900.svg",
       "AssetKind": "All",
@@ -2924,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.svg"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -2941,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-solid-900.woff",
       "AssetKind": "All",
@@ -2958,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/font-awesome/webfonts/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -2975,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2992,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -3009,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -3026,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -3043,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -3060,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -3077,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -3094,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -3111,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -3128,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -3145,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3162,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "cacambaonline",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\wwwroot\\",
+      "ContentRoot": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\wwwroot\\",
       "BasePath": "_content/cacambaonline",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

@@ -47,7 +47,7 @@
                     </div>
 
                 </div>
-
+@*
                 <div class="row">
                     <div class="col-md-3 text-center">
 
@@ -58,13 +58,13 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>*@
             </div>
 
         </div>
 
         <table class="table">
-            <thead>
+            <thead class="thead-dark">
                 <tr>
                     <th>
                         @Html.DisplayNameFor(model => model.Id)
@@ -176,7 +176,7 @@
             }
 
                                      //var latlon = position.coords.latitude + "," + position.coords.longitude;
-                    var lat = -20.3783959;
+            var lat = -20.3783959;
             var long = -40.3113652;
 
             let elementos = document.getElementsByClassName("localizacao");

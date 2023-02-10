@@ -23,6 +23,8 @@ namespace cacambaonline.Models
         /*EF Relation*/
         public Notificacoes_Novo? Notificacoes_Novo { get; set; }
 
+        public string? Motivo_Exclusao { get; set; }
+
 
         #endregion
     }

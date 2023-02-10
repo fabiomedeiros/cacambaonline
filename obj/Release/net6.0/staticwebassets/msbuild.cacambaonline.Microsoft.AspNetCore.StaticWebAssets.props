@@ -16,12 +16,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\Manual do Sistema - Caçamba Online.docx))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\1\d2eb5818-f0fa-475f-a090-3aa6380f72d5_articuladores.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\2\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_articuladores.png))">
       <SourceType>Package</SourceType>
       <SourceId>cacambaonline</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/1/d2eb5818-f0fa-475f-a090-3aa6380f72d5_articuladores.png</RelativePath>
+      <RelativePath>arquivos/notificacoes/2/f904719e-b181-4b7e-849a-3bb9a1a2dc4d_articuladores.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -30,14 +30,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\1\d2eb5818-f0fa-475f-a090-3aa6380f72d5_articuladores.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\2\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_articuladores.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\1\d2eb5818-f0fa-475f-a090-3aa6380f72d5_calendario_2021.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\2\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_image.png))">
       <SourceType>Package</SourceType>
       <SourceId>cacambaonline</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/1/d2eb5818-f0fa-475f-a090-3aa6380f72d5_calendario_2021.jpg</RelativePath>
+      <RelativePath>arquivos/notificacoes/2/f904719e-b181-4b7e-849a-3bb9a1a2dc4d_image.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -46,14 +46,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\1\d2eb5818-f0fa-475f-a090-3aa6380f72d5_calendario_2021.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\2\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_image.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\1\d2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\2\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_Notificacao.pdf))">
       <SourceType>Package</SourceType>
       <SourceId>cacambaonline</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/1/d2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf</RelativePath>
+      <RelativePath>arquivos/notificacoes/2/f904719e-b181-4b7e-849a-3bb9a1a2dc4d_Notificacao.pdf</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -62,311 +62,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\1\d2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\1\Teste 3 - NomeFantasiad2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/1/Teste 3 - NomeFantasiad2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\1\Teste 3 - NomeFantasiad2eb5818-f0fa-475f-a090-3aa6380f72d5_Notificacao.pdf))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\2\d55df27c-f480-41aa-a591-76130a64c20e_articuladores.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/2/d55df27c-f480-41aa-a591-76130a64c20e_articuladores.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\2\d55df27c-f480-41aa-a591-76130a64c20e_articuladores.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\2\d55df27c-f480-41aa-a591-76130a64c20e_calendario_2021.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/2/d55df27c-f480-41aa-a591-76130a64c20e_calendario_2021.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\2\d55df27c-f480-41aa-a591-76130a64c20e_calendario_2021.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\3\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_sabor-da-barra.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/3/f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_sabor-da-barra.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\3\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_sabor-da-barra.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\3\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_SEMTI.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/3/f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_SEMTI.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\3\f2b904e8-6aca-4fb7-a8e4-cdc7052d4a76_SEMTI.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\4\0f29cd63-b435-4c1a-903c-9497dacd1216_articuladores.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/4/0f29cd63-b435-4c1a-903c-9497dacd1216_articuladores.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\4\0f29cd63-b435-4c1a-903c-9497dacd1216_articuladores.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\4\0f29cd63-b435-4c1a-903c-9497dacd1216_foto_perfil.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/4/0f29cd63-b435-4c1a-903c-9497dacd1216_foto_perfil.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\4\0f29cd63-b435-4c1a-903c-9497dacd1216_foto_perfil.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\4\270dac1a-8ff4-4b66-a7c2-9a238c34bd89_Notificacao.pdf))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/4/270dac1a-8ff4-4b66-a7c2-9a238c34bd89_Notificacao.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\4\270dac1a-8ff4-4b66-a7c2-9a238c34bd89_Notificacao.pdf))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\5\409d962a-87ec-4398-a341-1a223828dc77_articuladores.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/5/409d962a-87ec-4398-a341-1a223828dc77_articuladores.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\5\409d962a-87ec-4398-a341-1a223828dc77_articuladores.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\5\409d962a-87ec-4398-a341-1a223828dc77_calendario_2021.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/5/409d962a-87ec-4398-a341-1a223828dc77_calendario_2021.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\5\409d962a-87ec-4398-a341-1a223828dc77_calendario_2021.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\5\Notificacao.pdf))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/5/Notificacao.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\5\Notificacao.pdf))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\6\bf622d36-6065-4d7f-a710-303109f321da_sabor-da-barra.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/6/bf622d36-6065-4d7f-a710-303109f321da_sabor-da-barra.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\6\bf622d36-6065-4d7f-a710-303109f321da_sabor-da-barra.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\6\bf622d36-6065-4d7f-a710-303109f321da_SEMTI.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/6/bf622d36-6065-4d7f-a710-303109f321da_SEMTI.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\6\bf622d36-6065-4d7f-a710-303109f321da_SEMTI.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\7\a4ac286d-5c7b-4251-af29-f9846f8fee72_articuladores.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/7/a4ac286d-5c7b-4251-af29-f9846f8fee72_articuladores.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\7\a4ac286d-5c7b-4251-af29-f9846f8fee72_articuladores.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\7\a4ac286d-5c7b-4251-af29-f9846f8fee72_calendario_2021.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/7/a4ac286d-5c7b-4251-af29-f9846f8fee72_calendario_2021.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\7\a4ac286d-5c7b-4251-af29-f9846f8fee72_calendario_2021.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\7\a4ac286d-5c7b-4251-af29-f9846f8fee72_Notificacao.pdf))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/7/a4ac286d-5c7b-4251-af29-f9846f8fee72_Notificacao.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\7\a4ac286d-5c7b-4251-af29-f9846f8fee72_Notificacao.pdf))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\8\7b7062f3-28eb-4789-9b41-e336d54a0c19_notebook.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/8/7b7062f3-28eb-4789-9b41-e336d54a0c19_notebook.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\8\7b7062f3-28eb-4789-9b41-e336d54a0c19_notebook.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\8\7b7062f3-28eb-4789-9b41-e336d54a0c19_Notificacao.pdf))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/8/7b7062f3-28eb-4789-9b41-e336d54a0c19_Notificacao.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\8\7b7062f3-28eb-4789-9b41-e336d54a0c19_Notificacao.pdf))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\8\7b7062f3-28eb-4789-9b41-e336d54a0c19_sabor-da-barra.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>cacambaonline</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/cacambaonline</BasePath>
-      <RelativePath>arquivos/notificacoes/8/7b7062f3-28eb-4789-9b41-e336d54a0c19_sabor-da-barra.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\8\7b7062f3-28eb-4789-9b41-e336d54a0c19_sabor-da-barra.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arquivos\notificacoes\2\f904719e-b181-4b7e-849a-3bb9a1a2dc4d_Notificacao.pdf))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Backup\GerarArquivo.txt))">
       <SourceType>Package</SourceType>

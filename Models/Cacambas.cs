@@ -11,6 +11,7 @@ namespace cacambaonline.Models
         public string? Descricao { get; set; }
         public string? Obs { get; set; }
         public bool? Ocupada { get; set; }
+        public bool? Notificado { get; set; }
         public int TransportadoresId { get; set; }
         /*EF Relation*/
         public Transportadores? Transportadores { get; set; }

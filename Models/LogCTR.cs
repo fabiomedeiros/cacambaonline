@@ -23,6 +23,10 @@ namespace cacambaonline.Models
         /*EF Relation*/
         public CTR_novo? CTR_novo { get; set; }
 
+        public string? Motivo_Exclusao { get; set; }
+
+
+
 
         #endregion
     }

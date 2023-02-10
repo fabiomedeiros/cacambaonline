@@ -10606,11 +10606,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\cacambaonline.csproj",
+      "projectUniqueName": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\cacambaonline.csproj",
       "projectName": "cacambaonline",
-      "projectPath": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\cacambaonline.csproj",
+      "projectPath": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\cacambaonline.csproj",
       "packagesPath": "C:\\Users\\fabio.medeiros\\.nuget\\packages\\",
-      "outputPath": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\obj\\",
+      "outputPath": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fabio.medeiros\\AppData\\Roaming\\NuGet\\NuGet.Config",

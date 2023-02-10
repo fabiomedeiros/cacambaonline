@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "th0XcGs/Ff/7qZocEWLfsfe/SJeyX0EiOTWxurUodHn+FIjIws8NiWSFiemcF+PamxlEfNfIspB/9qEiWSy6sw==",
+  "dgSpecHash": "VRd2kSsGdVBgxjr7NdE2HjXxyfNg9xibUqPZ6R4KKWgAnPwueHEZYzVqQd9SB3gkEVe6tuclFhZMuY+D+lSGEw==",
   "success": true,
-  "projectFilePath": "D:\\PROJETOS 2022\\Cacamba\\cacambaonline\\cacambaonline.csproj",
+  "projectFilePath": "D:\\PROJETOS2022\\Cacamba\\Git\\cacambaonline\\cacambaonline.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fabio.medeiros\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\fabio.medeiros\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

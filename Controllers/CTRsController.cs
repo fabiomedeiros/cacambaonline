@@ -159,16 +159,17 @@ namespace cacambaonline.Controllers
                     _context.Update(cacamba);
                     await _context.SaveChangesAsync();
 
+
                     //CTR_NOVO
                     CTR_novo logctrnovo = new CTR_novo();
                     logctrnovo.Localizacao = cTR.Localizacao;
                     logctrnovo.Latitude = cTR.Latitude;
                     logctrnovo.Longitude = cTR.Longitude;
-                    logctrnovo.Data = cTR.Data;
+                    logctrnovo.Data = DateTime.Now;
                     logctrnovo.TransportadoresId = cTR.TransportadoresId;
                     logctrnovo.CacambasId = cTR.CacambasId;
                     logctrnovo.DestinatariosId = cTR.DestinatariosId;
-                    logctrnovo.UsuarioId = cTR.UsuarioId;
+                    logctrnovo.UsuarioId = User.FindFirstValue(ClaimTypes.NameIdentifier); 
                     logctrnovo.Fechada = cTR.Fechada;
                     logctrnovo.Excluido = cTR.Excluido;
                     logctrnovo.Notificado = cTR.Notificado;
@@ -176,27 +177,33 @@ namespace cacambaonline.Controllers
                     _context.Add(logctrnovo);
                     await _context.SaveChangesAsync();
 
+                    
+
                     //Salvar o Log 
                     LogCTR logctr = new LogCTR();
                     logctr.Data = DateTime.Now;
                     logctr.UsuarioId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                     logctr.CTRId = cTR.Id;
                     logctr.Operacao = "Novo";
-
-                    
                     logctr.CTR_novoId = logctrnovo.Id;
                     logctr.CTR_antigoId = null;
                     _context.Add(logctr);
                     await _context.SaveChangesAsync();
 
+
+                    return RedirectToAction(nameof(Index));
                     //FIM LOG
 
-                    ViewData["CacambasId"] = new SelectList(_context.Cacambas, "Id", "Id", cTR.CacambasId);
-                    ViewData["DestinatariosId"] = new SelectList(_context.Destinatarios, "Id", "Id", cTR.DestinatariosId);
-                    ViewData["TransportadoresId"] = new SelectList(_context.Transportadores, "Id", "Id", cTR.TransportadoresId);
+                    //ViewData["CacambasId"] = new SelectList(_context.Cacambas, "Id", "Id", cTR.CacambasId);
+                    //ViewData["DestinatariosId"] = new SelectList(_context.Destinatarios, "Id", "Id", cTR.DestinatariosId);
+                    //ViewData["TransportadoresId"] = new SelectList(_context.Transportadores, "Id", "Id", cTR.TransportadoresId);
 
-                    
-                    return RedirectToAction(nameof(Index));
+                    // return RedirectToAction(nameof(Index));
+                    //return View();
+                    //Console.WriteLine("estou aqui");
+                    //return Redirect("/CTRs/Index");
+                    //return View(cTR);
+
                 }
                 else
                 {
@@ -205,7 +212,7 @@ namespace cacambaonline.Controllers
                     ViewData["DestinatariosId"] = new SelectList(_context.Destinatarios, "Id", "NomeFantasia");
                     ViewData["TransportadoresId"] = new SelectList(_context.Transportadores, "Id", "NomeFantasia");
 
-                    return View();
+                    return View(cTR);
                 }
                
             }
@@ -409,7 +416,10 @@ namespace cacambaonline.Controllers
            
             cTR.Fechada = true;
             cTR.DataBaixa = DateTime.Now;
-          
+
+            _context.Update(cTR);
+            await _context.SaveChangesAsync();
+
             if (cTR == null)
             {
                 return NotFound();
@@ -427,7 +437,7 @@ namespace cacambaonline.Controllers
             logctrantigo.Localizacao = ctrantigo.Localizacao;
             logctrantigo.Latitude = ctrantigo.Latitude;
             logctrantigo.Longitude = ctrantigo.Longitude;
-            logctrantigo.Data = ctrantigo.Data;
+            logctrantigo.Data = DateTime.Now;
             logctrantigo.TransportadoresId = ctrantigo.TransportadoresId;
             logctrantigo.CacambasId = ctrantigo.CacambasId;
             logctrantigo.DestinatariosId = ctrantigo.DestinatariosId;
@@ -436,12 +446,13 @@ namespace cacambaonline.Controllers
             logctrantigo.Excluido = ctrantigo.Excluido;
             logctrantigo.Notificado = ctrantigo.Notificado;
             logctrantigo.Multado = ctrantigo.Multado;
-            logctrantigo.DataBaixa = ctrantigo.DataBaixa;
+//logctrantigo.DataBaixa = DateTime.Now;
 
             _context.Add(logctrantigo);
+            await _context.SaveChangesAsync();
 
             //CTR_NOVO
-            CTR_antigo logctrnovo = new CTR_antigo();
+            CTR_novo logctrnovo = new CTR_novo();
             logctrnovo.Localizacao = cTR.Localizacao;
             logctrnovo.Latitude = cTR.Latitude;
             logctrnovo.Longitude = cTR.Longitude;
@@ -454,9 +465,10 @@ namespace cacambaonline.Controllers
             logctrnovo.Excluido = cTR.Excluido;
             logctrnovo.Notificado = cTR.Notificado;
             logctrnovo.Multado = cTR.Multado;
-            logctrnovo.DataBaixa = cTR.DataBaixa;
+            logctrnovo.DataBaixa = DateTime.Now;
 
             _context.Add(logctrnovo);
+            await _context.SaveChangesAsync();
 
             //Salvar o Log 
             LogCTR logctr = new LogCTR();
@@ -468,12 +480,10 @@ namespace cacambaonline.Controllers
             logctr.CTR_antigoId = logctrantigo.Id;
             logctr.CTR_novoId = logctrnovo.Id;
             _context.Add(logctr);
+            await _context.SaveChangesAsync();
 
             //FIM LOG
 
-
-            _context.Add(cTR);
-            _context.Update(cTR);
 
             @ViewData["alerta"] = "Baixa efetuada com sucesso.";
 
@@ -543,6 +553,10 @@ namespace cacambaonline.Controllers
                 .Include(c => c.Destinatarios)
                 .Include(c => c.Transportadores)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
+
+
+
             if (cTR == null)
             {
                 return NotFound();
@@ -607,10 +621,11 @@ namespace cacambaonline.Controllers
                 logctr.Data = DateTime.Now;
                 logctr.UsuarioId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 logctr.CTRId = cTR.Id;
-                logctr.Operacao = "Edit";
+                logctr.Operacao = "Delete";
 
                 logctr.CTR_antigoId = logctrantigo.Id;
                 logctr.CTR_novoId = logctrnovo.Id;
+                logctr.Motivo_Exclusao = cTR.Motivo_Exclusao;
                 _context.Add(logctr);
 
                 //FIM LOG

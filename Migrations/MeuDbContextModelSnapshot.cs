@@ -33,6 +33,9 @@ namespace cacambaonline.Migrations
                     b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool?>("Notificado")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Numero")
                         .HasColumnType("nvarchar(max)");
 
@@ -182,7 +185,7 @@ namespace cacambaonline.Migrations
                     b.Property<int?>("CacambasId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("Data")
+                    b.Property<DateTime?>("Data")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("DataBaixa")
@@ -471,6 +474,9 @@ namespace cacambaonline.Migrations
                     b.Property<DateTime>("Data")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Motivo_Exclusao")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Operacao")
                         .HasColumnType("nvarchar(max)");
 
@@ -498,6 +504,9 @@ namespace cacambaonline.Migrations
 
                     b.Property<DateTime>("Data")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Motivo_Exclusao")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("NotificacoesId")
                         .HasColumnType("int");
@@ -536,6 +545,9 @@ namespace cacambaonline.Migrations
                     b.Property<string>("Arquivo")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool?>("Ativa")
+                        .HasColumnType("bit");
+
                     b.Property<int?>("CTRId")
                         .HasColumnType("int");
 
@@ -571,6 +583,9 @@ namespace cacambaonline.Migrations
 
                     b.Property<bool?>("Multa")
                         .HasColumnType("bit");
+
+                    b.Property<int?>("NumeroCamcamba")
+                        .HasColumnType("int");
 
                     b.Property<string>("Obs")
                         .HasColumnType("nvarchar(max)");
@@ -715,13 +730,22 @@ namespace cacambaonline.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Cargo")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Cpf")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Data")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Matricula")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefone")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

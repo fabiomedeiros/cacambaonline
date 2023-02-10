@@ -8,7 +8,14 @@
 
 <hr />
 <p></p>
-<h3 class="text-danger">@ViewData["alerta"]</h3>
+@*<h3 class="text-danger">@ViewData["alerta"]</h3>*@
+@if (@ViewData["alerta"]!=null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewData["alerta"]
+    </div>
+}
+
 <p></p>
 
 <div class="card" id="passo1">
@@ -158,6 +165,11 @@
 
                     </div>
 
+                    <div id="Div_exibecacamba_Numero" style="display:none;" name="Div_exibecacamba_Numero" class="exibecacamba">
+                        <label asp-for="NumeroCamcamba" class="control-label"></label>
+                <input asp-for="NumeroCamcamba" type="number" class="form-control" />
+                <span asp-validation-for="NumeroCamcamba" class="text-danger"></span>
+                    </div>
                    
 
 
@@ -204,6 +216,8 @@
             if (valor == '4') 
             {
                 $("#Div_exibecacamba").hide();
+                $("#Div_exibecacamba_Numero").show();
+                
             } 
             else 
             {
@@ -211,6 +225,7 @@
                 $("#Div_exibecacamba").show();
                 document.getElementById("Pais_Nacionalidade").required = true;
                 $("#Obrigatorio_Pais_Nacionalidade").show();
+                $("#Div_exibecacamba_Numero").hide();
             }
         };
 
@@ -380,7 +395,7 @@
             //colocando o endereco no padrao correto
             var endereco = logradoro + ", " + numero + ", " + bairro + " - " + cidade;
             //MUDANDO O ZOOM DO MAPA
-            map.setZoom(17);
+            map.setZoom(20);
             //Buscando lat e log por endereco (no formato: nome rua, numero, bairro - cidade)
             var geocoder = new google.maps.Geocoder();
             geocoder.geocode({ 'address': endereco }, function (results, status) {
@@ -463,9 +478,6 @@
         //        draggable: true
 
         //    })
-
-
-
 
 
 

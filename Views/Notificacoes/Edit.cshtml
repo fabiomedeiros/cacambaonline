@@ -11,61 +11,87 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+
+                <label asp-for="Ativa" class="control-label">Ativo/Não Ativo</label><br />
+                <input type="radio" value="True" asp-for="Ativa" /> Ativo <br />
+                <input type="radio" value="False" asp-for="Ativa" /> Não Ativo<br />
+
+                @*<label asp-for="Ativa" class="control-label"></label>
+                <input asp-for="Ativa" class="form-control" />
+                <span asp-validation-for="Ativa" class="text-danger"></span>*@
+            </div>
+
             <div class="form-group">
                 <label asp-for="Descricao" class="control-label"></label>
                 <input asp-for="Descricao" class="form-control" />
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            @*<div class="form-group">
                 <label asp-for="Obs" class="control-label"></label>
                 <input asp-for="Obs" class="form-control" />
                 <span asp-validation-for="Obs" class="text-danger"></span>
-            </div>
+            </div>*@
             <div class="form-group">
                 <label asp-for="Localizacao" class="control-label"></label>
                 <input asp-for="Localizacao" class="form-control" />
                 <span asp-validation-for="Localizacao" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Latitude" class="control-label"></label>
-                <input asp-for="Latitude" class="form-control" />
+                <label asp-for="Latitude"  class="control-label"></label>
+                <input asp-for="Latitude" readonly class="form-control" />
                 <span asp-validation-for="Latitude" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Longitude" class="control-label"></label>
-                <input asp-for="Longitude" class="form-control" />
+                <label asp-for="Longitude"  class="control-label"></label>
+                <input asp-for="Longitude" readonly class="form-control" />
                 <span asp-validation-for="Longitude" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Foto1" class="control-label"></label>
-                <input asp-for="Foto1" class="form-control" />
+                <input asp-for="Foto1" readonly class="form-control" />
+                <image style="width:200px" src="/arquivos/notificacoes/@Model.Id/@Model.Foto1"></image>
                 <span asp-validation-for="Foto1" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Foto2" class="control-label"></label>
-                <input asp-for="Foto2" class="form-control" />
+                <input asp-for="Foto2" readonly class="form-control" />
+                <image style="width:200px" src="/arquivos/notificacoes/@Model.Id/@Model.Foto2"></image>
                 <span asp-validation-for="Foto2" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            @*<div class="form-group">
                 <label asp-for="Multa" class="control-label"></label>
                 <input asp-for="Multa" class="form-control" />
                 <span asp-validation-for="Multa" class="text-danger"></span>
-            </div>
+            </div>*@
             <div class="form-group">
                 <label asp-for="CTRId" class="control-label"></label>
-                <select asp-for="CTRId" class="form-control" asp-items="ViewBag.CTRId"></select>
+                <select asp-for="CTRId" readonly  class="form-control" asp-items="ViewBag.CTRId"></select>
                 <span asp-validation-for="CTRId" class="text-danger"></span>
             </div>
+            
+            <div class="form-group">
+                <label asp-for="InfracoesId" class="control-label"></label>
+                <select asp-for="InfracoesId" readonly  class="form-control" asp-items="ViewBag.InfracaoId"></select>
+                @*<input asp-for="InfracoesId" class="form-control" />*@
+                <span asp-validation-for="InfracoesId" class="text-danger"></span>
+            </div>
+            @*ViewData["Usuario"]*@
             <div class="form-group">
                 <label asp-for="UsuarioFiscalId" class="control-label"></label>
-                <input asp-for="UsuarioFiscalId" class="form-control" />
+                <select asp-for="UsuarioFiscalId" readonly class="form-control" asp-items="ViewBag.Usuario"></select>
+                @*<input asp-for="UsuarioFiscalId" class="form-control" />*@
                 <span asp-validation-for="UsuarioFiscalId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Data" class="control-label"></label>
-                <input asp-for="Data" class="form-control" />
+                <input asp-for="Data" readonly class="form-control" />
                 <span asp-validation-for="Data" class="text-danger"></span>
             </div>
+
+
+
             <p></p>
             <div class="form-group">
                 <input type="submit" value="Alterar" class="btn btn-primary" /> | <a asp-action="Index" class="btn btn-secondary">Voltar</a>

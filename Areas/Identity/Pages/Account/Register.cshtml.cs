@@ -93,6 +93,13 @@ namespace cacambaonline.Areas.Identity.Pages.Account
             [StringLength(11, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres", MinimumLength = 11)]
             public string Cpf { get; set; }
 
+            [Required(ErrorMessage = "O campo {0} é obrigatório")]
+            public string Matricula { get; set; }
+            [Required(ErrorMessage = "O campo {0} é obrigatório")]
+            public string Cargo { get; set; }
+            [Required(ErrorMessage = "O campo {0} é obrigatório")]
+            public string Telefone { get; set; }
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -259,7 +266,10 @@ namespace cacambaonline.Areas.Identity.Pages.Account
                 //Complentar os dados tabela pessoa
                 Pessoas p = new Pessoas();
                 p.Cpf = Input.Cpf;
-                p.Nome = Input.Cpf;
+                p.Nome = Input.Nome;
+                p.Matricula = Input.Matricula;
+                p.Cargo = Input.Cargo;
+                p.Telefone = Input.Telefone;
                 p.AspNetUsersId = userId;
                 p.Data = DateTime.Now;
 

@@ -11,7 +11,7 @@ namespace cacambaonline.Models
         public string? Localizacao { get; set; }
         public string? Latitude { get; set; }
         public string? Longitude { get; set; }
-        public DateTime Data { get; set; }
+        public DateTime? Data { get; set; }
 
         public int? TransportadoresId { get; set; }
         /*EF Relation*/
